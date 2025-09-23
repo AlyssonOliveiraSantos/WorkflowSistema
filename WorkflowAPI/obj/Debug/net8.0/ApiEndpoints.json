@@ -1,0 +1,364 @@
+[
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AreaController",
+    "Method": "ListaTodos",
+    "RelativePath": "api/Area",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AreaController",
+    "Method": "Criar",
+    "RelativePath": "api/Area",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "areaRequest",
+        "Type": "WorkflowAPI.Requests.AreaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AreaController",
+    "Method": "DeletarArea",
+    "RelativePath": "api/Area/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AreaController",
+    "Method": "Atualizar",
+    "RelativePath": "api/Area/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "areaRequest",
+        "Type": "WorkflowAPI.Requests.AreaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AreaController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/Area/id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AuthController",
+    "Method": "CadastraUsuario",
+    "RelativePath": "api/Auth/cadastro",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "LoginCadastraRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WorkflowAPI.Helper.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AuthController",
+    "Method": "Me",
+    "RelativePath": "api/Auth/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AuthController",
+    "Method": "RefreshAsync",
+    "RelativePath": "api/Auth/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WorkflowAPI.Helper.TokenRefreshRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.ProgramaController",
+    "Method": "Get",
+    "RelativePath": "api/Programa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.ProgramaController",
+    "Method": "Post",
+    "RelativePath": "api/Programa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "programaResponse",
+        "Type": "WorkflowAPI.Responses.ProgramaResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.ProgramaController",
+    "Method": "GetById",
+    "RelativePath": "api/Programa/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.ProgramaController",
+    "Method": "Put",
+    "RelativePath": "api/Programa/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "programaResponse",
+        "Type": "WorkflowAPI.Responses.ProgramaResponse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.ProgramaController",
+    "Method": "Delete",
+    "RelativePath": "api/Programa/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.SolicitacaoAcessoProgramaController",
+    "Method": "Get",
+    "RelativePath": "api/SolicitacaoAcessoPrograma",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.SolicitacaoAcessoProgramaController",
+    "Method": "Post",
+    "RelativePath": "api/SolicitacaoAcessoPrograma",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "solicitacaoRequest",
+        "Type": "WorkflowAPI.Requests.SolicitacaoAcessoProgramaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.SolicitacaoAcessoProgramaController",
+    "Method": "AtualizarDecisao",
+    "RelativePath": "api/SolicitacaoAcessoPrograma/{id}/decisao",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "WorkflowAPI.Requests.DecisaoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.SolicitacaoAcessoProgramaController",
+    "Method": "GetMinhasSolicitacoes",
+    "RelativePath": "api/SolicitacaoAcessoPrograma/minhas-solicitacoes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.SolicitacaoAcessoProgramaController",
+    "Method": "GetMinhasSolicitacoesPendentesAprovacao",
+    "RelativePath": "api/SolicitacaoAcessoPrograma/solicitacoes-pendentes-aprovacao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsuarioWorkflowController",
+    "Method": "ListaTodos",
+    "RelativePath": "api/UsuarioWorkflow",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsuarioWorkflowController",
+    "Method": "Criar",
+    "RelativePath": "api/UsuarioWorkflow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "WorkflowAPI.Requests.UsuarioWorkflowRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsuarioWorkflowController",
+    "Method": "Atualizar",
+    "RelativePath": "api/UsuarioWorkflow/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "WorkflowAPI.Requests.UsuarioWorkflowRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsuarioWorkflowController",
+    "Method": "Deletar",
+    "RelativePath": "api/UsuarioWorkflow/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UsuarioWorkflowController",
+    "Method": "ObterPorId",
+    "RelativePath": "api/UsuarioWorkflow/id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

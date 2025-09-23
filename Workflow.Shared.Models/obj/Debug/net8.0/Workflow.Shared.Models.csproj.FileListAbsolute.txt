@@ -1,0 +1,11 @@
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\bin\Debug\net8.0\Workflow.Shared.Models.deps.json
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\bin\Debug\net8.0\Workflow.Shared.Models.dll
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\bin\Debug\net8.0\Workflow.Shared.Models.pdb
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\Workflow.Shared.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\Workflow.Shared.Models.AssemblyInfoInputs.cache
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\Workflow.Shared.Models.AssemblyInfo.cs
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\Workflow.Shared.Models.csproj.CoreCompileInputs.cache
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\Workflow.Shared.Models.dll
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\refint\Workflow.Shared.Models.dll
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\Workflow.Shared.Models.pdb
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\ref\Workflow.Shared.Models.dll

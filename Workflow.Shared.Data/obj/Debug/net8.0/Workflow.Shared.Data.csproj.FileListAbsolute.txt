@@ -1,0 +1,17 @@
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\bin\Debug\net8.0\Workflow.Shared.Data.deps.json
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\bin\Debug\net8.0\Workflow.Shared.Data.runtimeconfig.json
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\bin\Debug\net8.0\Workflow.Shared.Data.dll
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\bin\Debug\net8.0\Workflow.Shared.Data.pdb
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\bin\Debug\net8.0\Workflow.Shared.Modelos.dll
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\bin\Debug\net8.0\Workflow.Shared.Modelos.pdb
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.csproj.AssemblyReference.cache
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.AssemblyInfoInputs.cache
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.AssemblyInfo.cs
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.csproj.CoreCompileInputs.cache
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.A7E81C1E.Up2Date
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.dll
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\refint\Workflow.Shared.Data.dll
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.pdb
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.genruntimeconfig.cache
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\ref\Workflow.Shared.Data.dll
