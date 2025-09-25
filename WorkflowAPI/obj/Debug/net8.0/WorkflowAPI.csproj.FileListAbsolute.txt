@@ -182,3 +182,4 @@ C:\Users\alyss\source\repos\WorkflowApi\WorkflowAPI\obj\Debug\net8.0\WorkflowAPI
 C:\Users\alyss\source\repos\WorkflowApi\WorkflowAPI\obj\Debug\net8.0\WorkflowAPI.genruntimeconfig.cache
 C:\Users\alyss\source\repos\WorkflowApi\WorkflowAPI\obj\Debug\net8.0\ref\WorkflowAPI.dll
 C:\Users\alyss\source\repos\WorkflowApi\WorkflowAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\alyss\source\repos\WorkflowApi\WorkflowAPI\obj\Debug\net8.0\WorkflowAPI.sourcelink.json

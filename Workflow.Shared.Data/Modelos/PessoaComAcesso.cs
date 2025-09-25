@@ -7,6 +7,7 @@ namespace Workflow.Shared.Data.Modelos
     {
 
         public int? UsuarioWorkflowId { get; set; }
+        public bool Ativo { get; set; } = true;
 
         public virtual UsuarioWorkflow? UsuarioWorkflow { get; set; } = null;
     }

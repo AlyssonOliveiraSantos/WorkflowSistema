@@ -109,17 +109,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/AreaRequest"
+                "$ref": "#/components/schemas/AreaUpdateRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/AreaRequest"
+                "$ref": "#/components/schemas/AreaUpdateRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/AreaRequest"
+                "$ref": "#/components/schemas/AreaUpdateRequest"
               }
             }
           }
@@ -318,17 +318,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProgramaResponse"
+                "$ref": "#/components/schemas/ProgramaUpdateRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProgramaResponse"
+                "$ref": "#/components/schemas/ProgramaUpdateRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProgramaResponse"
+                "$ref": "#/components/schemas/ProgramaUpdateRequest"
               }
             }
           }
@@ -551,17 +551,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioWorkflowRequest"
+                "$ref": "#/components/schemas/UsuarioWorkflowUpdateRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioWorkflowRequest"
+                "$ref": "#/components/schemas/UsuarioWorkflowUpdateRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioWorkflowRequest"
+                "$ref": "#/components/schemas/UsuarioWorkflowUpdateRequest"
               }
             }
           }
@@ -598,6 +598,25 @@
   "components": {
     "schemas": {
       "AreaRequest": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "responsavelAreaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AreaUpdateRequest": {
         "type": "object",
         "properties": {
           "nome": {
@@ -662,12 +681,22 @@
       },
       "PerfilEnum": {
         "enum": [
-          1,
-          2,
-          3
+          "Admin = 1",
+          "Padrao = 2",
+          "Gerente = 3"
         ],
         "type": "integer",
         "format": "int32"
+      },
+      "Permissao": {
+        "enum": [
+          "Nenhuma = 0",
+          "Incluir = 1",
+          "Modificar = 2",
+          "Consultar = 4",
+          "Excluir = 8"
+        ],
+        "type": "string"
       },
       "ProgramaResponse": {
         "type": "object",
@@ -687,6 +716,21 @@
         },
         "additionalProperties": false
       },
+      "ProgramaUpdateRequest": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "SolicitacaoAcessoProgramaRequest": {
         "type": "object",
         "properties": {
@@ -697,15 +741,18 @@
           "programaId": {
             "type": "integer",
             "format": "int32"
+          },
+          "permissoes": {
+            "$ref": "#/components/schemas/Permissao"
           }
         },
         "additionalProperties": false
       },
       "TipoDecisao": {
         "enum": [
-          1,
-          2,
-          3
+          "Gerente = 1",
+          "ResponsavelPrograma = 2",
+          "TI = 3"
         ],
         "type": "integer",
         "format": "int32"
@@ -730,6 +777,24 @@
           "areaId": {
             "type": "integer",
             "format": "int32"
+          },
+          "perfil": {
+            "$ref": "#/components/schemas/PerfilEnum"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioWorkflowUpdateRequest": {
+        "type": "object",
+        "properties": {
+          "nome": {
+            "type": "string",
+            "nullable": true
+          },
+          "areaId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           },
           "perfil": {
             "$ref": "#/components/schemas/PerfilEnum"

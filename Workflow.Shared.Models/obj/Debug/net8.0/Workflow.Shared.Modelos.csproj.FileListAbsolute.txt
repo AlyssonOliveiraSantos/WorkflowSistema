@@ -10,3 +10,4 @@ C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\
 C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\refint\Workflow.Shared.Modelos.dll
 C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\Workflow.Shared.Modelos.pdb
 C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\ref\Workflow.Shared.Modelos.dll
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Models\obj\Debug\net8.0\Workflow.Shared.Modelos.sourcelink.json

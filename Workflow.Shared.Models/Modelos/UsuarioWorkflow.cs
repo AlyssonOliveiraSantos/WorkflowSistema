@@ -12,7 +12,7 @@ namespace Workflow.Shared.Modelos.Modelos
         public int Id { get; set; }
         public string Nome { get; set; } = null!;
         public int AreaId { get; set; }
-        public PerfilEnum Perfil { get; set; }
         public virtual Area Area { get; set; } = null!;
+        public bool Ativo { get; set; } = true;
     }
 }

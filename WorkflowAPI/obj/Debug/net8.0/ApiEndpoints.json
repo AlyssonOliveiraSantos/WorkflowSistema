@@ -56,7 +56,7 @@
       },
       {
         "Name": "areaRequest",
-        "Type": "WorkflowAPI.Requests.AreaRequest",
+        "Type": "WorkflowAPI.Requests.AreaUpdateRequest",
         "IsRequired": true
       }
     ],
@@ -193,7 +193,7 @@
       },
       {
         "Name": "programaResponse",
-        "Type": "WorkflowAPI.Responses.ProgramaResponse",
+        "Type": "WorkflowAPI.Requests.ProgramaUpdateRequest",
         "IsRequired": true
       }
     ],
@@ -323,7 +323,7 @@
       },
       {
         "Name": "request",
-        "Type": "WorkflowAPI.Requests.UsuarioWorkflowRequest",
+        "Type": "WorkflowAPI.Requests.UsuarioWorkflowUpdateRequest",
         "IsRequired": true
       }
     ],

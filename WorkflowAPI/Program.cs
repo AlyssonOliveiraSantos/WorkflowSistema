@@ -10,6 +10,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using Workflow.Shared.Data.Banco;
 using Workflow.Shared.Data.Modelos;
+using Workflow.Shared.Data.Seed;
 using Workflow.Shared.Modelos.Modelos;
 using WorkflowAPI.Helper;
 using WorkflowAPI.Services;
@@ -31,8 +32,6 @@ builder.Services.AddIdentity<PessoaComAcesso, PerfilDeAcesso>()
     .AddEntityFrameworkStores<WorkflowDbContext>()
     .AddDefaultTokenProviders();
 
-
-builder.Services.AddAuthorization();
 builder.Services.AddScoped<DAL<PessoaComAcesso>>();
 builder.Services.AddScoped<DAL<PerfilDeAcesso>>();
 builder.Services.AddScoped<UsuarioService>();
@@ -44,6 +43,7 @@ builder.Services.AddTransient<DAL<SolicitacaoAcessoPrograma>>();
 
 builder.Services.AddSwaggerGen(c =>
 {
+    c.SchemaFilter<EnumWithValuesSchemaFilter>();
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minha API", Version = "v1" });
 
     // Configuração para JWT Bearer
@@ -94,8 +94,13 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<PerfilDeAcesso>>();
+    await RoleSeeder.SeedRoles(roleManager);
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

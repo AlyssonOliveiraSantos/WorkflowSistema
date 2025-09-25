@@ -1,4 +1,5 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -14,14 +15,15 @@ namespace WorkflowAPI.Services
         {
             _configuration = configuration;
         }
-        public string GenerateToken(PessoaComAcesso usuario)
+        public string GenerateToken(PessoaComAcesso usuario, IList<string> roles)
         {
             Claim[] claims = new Claim[]
             {
                 new Claim("idsub", usuario.Id.ToString()),
                 new Claim("username", usuario.UserName),
-                new Claim("loginTimestamp", DateTime.UtcNow.ToString()),    
-                new Claim("token_type", "access")
+                new Claim("loginTimestamp", DateTime.UtcNow.ToString()),
+                new Claim("token_type", "access"),
+                new Claim(ClaimTypes.Role, roles.First())
             };
 
             var chave = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["SymmetricSecurityKey"]));
@@ -41,12 +43,12 @@ namespace WorkflowAPI.Services
 
         public string GenerateRefreshToken(PessoaComAcesso usuario)
         {
-            Claim[] claims = new Claim[]
+            var claims = new Claim[]
             {
-                new Claim("idsub", usuario.Id.ToString()),
-                new Claim("username", usuario.UserName),
-                new Claim("loginTimestamp", DateTime.UtcNow.ToString()),
-                new Claim("token_type", "refresh") 
+              new Claim("idsub", usuario.Id.ToString()),
+              new Claim("username", usuario.UserName),
+              new Claim("loginTimestamp", DateTime.UtcNow.ToString()),
+              new Claim("token_type", "refresh"),
             };
 
             var chave = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["SymmetricSecurityKey"]));

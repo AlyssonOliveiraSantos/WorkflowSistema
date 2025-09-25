@@ -12,6 +12,7 @@ namespace Workflow.Shared.Modelos.Modelos
         public string NomeArea { get; set; }
         public string Descricao { get; set; }
         public int? ResponsavelAreaId { get; set; }
+        public bool Ativo { get; set; } = true;
 
         public virtual UsuarioWorkflow ResponsavelArea { get; set; }
         public virtual ICollection<Programa> Programas { get; set; } = new List<Programa>();

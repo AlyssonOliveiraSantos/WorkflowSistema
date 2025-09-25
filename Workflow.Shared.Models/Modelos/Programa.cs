@@ -10,10 +10,9 @@ namespace Workflow.Shared.Modelos.Modelos
     public class Programa
     {
         public int Id { get; set; }
-        [Required]
         public string NomePrograma { get; set; } = null!;
-        [Required]
         public int AreaId { get; set; }
+        public bool Ativo { get; set; } = true;
 
         public virtual Area Area { get; set; }
     }

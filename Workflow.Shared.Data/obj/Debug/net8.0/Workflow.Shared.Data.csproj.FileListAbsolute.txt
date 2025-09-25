@@ -15,3 +15,4 @@ C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\re
 C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.pdb
 C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.genruntimeconfig.cache
 C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\ref\Workflow.Shared.Data.dll
+C:\Users\alyss\source\repos\WorkflowApi\Workflow.Shared.Data\obj\Debug\net8.0\Workflow.Shared.Data.sourcelink.json

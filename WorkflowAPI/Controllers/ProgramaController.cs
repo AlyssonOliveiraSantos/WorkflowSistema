@@ -1,10 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Workflow.Shared.Data.Banco;
 using Workflow.Shared.Modelos.Modelos;
+using WorkflowAPI.Requests;
 using WorkflowAPI.Responses;
 
 namespace WorkflowAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ProgramaController : ControllerBase
@@ -27,29 +30,30 @@ namespace WorkflowAPI.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var programa = await _dal.ListarPor(p => p.Id == id);
-            if (!programa.Any())
+            var programas = await _dal.ListarPor(p => p.Id == id);
+            var programasAtivos = programas.Where(p => p.Ativo);
+            if (!programasAtivos.Any())
             {
                 return NotFound($"Programa com ID {id} não encontrado.");
             }
-            var programaResponse = programa.Select(p => new ProgramaResponse(p.Id, p.NomePrograma, p.AreaId ));
+            var programaResponse = programasAtivos.Select(p => new ProgramaResponse(p.Id, p.NomePrograma, p.AreaId ));
             return Ok(programaResponse);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] ProgramaResponse programaResponse)
+        public async Task<IActionResult> Post([FromBody] ProgramaRequest programaRequest)
         {
             var programa = new Programa
             {
-                NomePrograma = programaResponse.nome,
-                AreaId = programaResponse.AreaId
+                NomePrograma = programaRequest.nome,
+                AreaId = programaRequest.AreaId
             };
             await _dal.Adicionar(programa);
             return CreatedAtAction(nameof(GetById), new { id = programa.Id }, programa);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, [FromBody] ProgramaResponse programaResponse)
+        public async Task<IActionResult> Put(int id, [FromBody] ProgramaUpdateRequest programaResponse)
         {
             var programaExistente = await _dal.RecuperarPor(p => p.Id == id);
             if (programaExistente == null)
@@ -57,8 +61,9 @@ namespace WorkflowAPI.Controllers
                 return NotFound($"Programa com ID {id} não encontrado.");
             }
 
-            programaExistente.NomePrograma  = programaResponse.nome;
-            programaExistente.AreaId = programaResponse.AreaId;
+            programaExistente.NomePrograma  = programaResponse.nome ?? programaExistente.NomePrograma;
+            programaExistente.AreaId = programaResponse.AreaId ?? programaExistente.AreaId;
+            programaExistente.Ativo = programaResponse.ativo ?? programaExistente.Ativo;
             await _dal.Atualizar(programaExistente);
             return NoContent();
         }
@@ -71,7 +76,8 @@ namespace WorkflowAPI.Controllers
             {
                 return NotFound($"Programa com ID {id} não encontrado.");
             }
-            await _dal.Deletar(programa);
+            programa.Ativo = false;
+            await _dal.Atualizar(programa);
             return NoContent();
         }
 

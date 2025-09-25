@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using System.Security.Claims;
 using Workflow.Shared.Data.Banco;
+using Workflow.Shared.Data.Enums;
 using Workflow.Shared.Data.Modelos;
 using Workflow.Shared.Modelos.Modelos;
 using WorkflowAPI.Helper;
@@ -26,23 +28,66 @@ namespace WorkflowAPI.Services
             _dalUsuarioWorkflow = dalUsuarioWorkflow;
         }
 
-        public async Task CadastraUsuario(LoginCadastraRequest loginRequest)
+        public async Task CadastraUsuario(LoginRequest loginRequest)
         {
             var usuario = new PessoaComAcesso
             {
                 UserName = loginRequest.Username,
                 NormalizedUserName = loginRequest.Username.ToUpper(),
-                UsuarioWorkflowId = loginRequest.UsuarioWorkflowId
             };
 
             IdentityResult resultado = await _userManager.CreateAsync(usuario, loginRequest.Password);
+            await _userManager.AddToRoleAsync(usuario, PerfilEnum.Padrao.ToString());
 
             if (!resultado.Succeeded)
 {
-    var erros = string.Join("; ", resultado.Errors.Select(e => e.Description));
-    throw new ApplicationException($"Falha ao cadastrar o usuário: {erros}");
+            var erros = string.Join("; ", resultado.Errors.Select(e => e.Description));
+            throw new ApplicationException($"Falha ao cadastrar o usuário: {erros}");
 }
 
+        }
+
+        public async Task atualizaSenhaUsuario(ClaimsPrincipal user,string senhaAtual, string senhaNova)
+        {
+            var usuario =  user.FindFirst("idsub");
+            if (usuario == null)
+                throw new ApplicationException("Usuário não encontrado.");
+            if (!int.TryParse(usuario.Value, out var pessoaId))
+                throw new ApplicationException("Usuário não encontrado.");
+            var pessoa = await _dal.RecuperarPor(p => p.Id == pessoaId);
+            var resultado = await _userManager.ChangePasswordAsync(pessoa, senhaAtual, senhaNova);
+            if (!resultado.Succeeded)
+            {
+                var erros = string.Join("; ", resultado.Errors.Select(e => e.Description));
+                throw new ApplicationException($"Falha ao atualizar a senha: {erros}");
+            }
+
+        }
+
+        public async Task<IEnumerable<UsuarioResponse>> ListarUsuarios()
+        {
+            var usuarios = await _dal.ListarTodos();
+            return usuarios.Select(u => new UsuarioResponse(u.Id, u.UserName, u.UsuarioWorkflowId ?? 0));
+        }
+
+        public async Task<PessoaComAcesso> AtualizaUsuario(int id, LoginUpdateRequest request)
+        {
+            var usuario = await _dal.RecuperarPor(u => u.Id == id);
+            if (usuario == null)
+                throw new ApplicationException("Usuário não encontrado.");
+
+            if (request.usuarioWorkflowId.HasValue)
+            {
+                var usuarioVinculado = await _dal.RecuperarPor(u => u.UsuarioWorkflowId == request.usuarioWorkflowId.Value);
+                if (usuarioVinculado != null && usuarioVinculado.Id != id)
+                    throw new ApplicationException("Outro usuário já está vinculado a esse Usuário Workflow.");
+
+                usuario.UsuarioWorkflowId = request.usuarioWorkflowId.Value;
+            }
+
+            usuario.Ativo = request.ativo ?? usuario.Ativo;
+            await _dal.Atualizar(usuario);
+            return usuario;
         }
 
         public async Task<(string token, string refreshToken)> Login(LoginRequest loginRequest)
@@ -51,8 +96,9 @@ namespace WorkflowAPI.Services
             if (!resultado.Succeeded) { throw new ApplicationException("Usuário não autenticado!"); }
 
             var usuario = await _userManager.FindByNameAsync(loginRequest.Username);
+            var roles = await _userManager.GetRolesAsync(usuario);
 
-            var token = _tokenService.GenerateToken(usuario);
+            var token = _tokenService.GenerateToken(usuario, roles);
             var refreshToken = _tokenService.GenerateRefreshToken(usuario);
             return (token, refreshToken);
         }
@@ -63,11 +109,15 @@ namespace WorkflowAPI.Services
             var username = principal.FindFirstValue("username");
             var usuario = await _userManager.FindByNameAsync(username);
 
-            var newAccessToken = _tokenService.GenerateToken(usuario);
+            var roles = await _userManager.GetRolesAsync(usuario);
+
+
+                var newAccessToken = _tokenService.GenerateToken(usuario, roles);
             var newRefreshToken = _tokenService.GenerateRefreshToken(usuario);
 
             return (newAccessToken, newRefreshToken);
         }
+
 
 
         public async Task<UsuarioWorkflow?> ObterUsuarioWorkflowLogadoAsync(ClaimsPrincipal user)
@@ -87,5 +137,17 @@ namespace WorkflowAPI.Services
             return usuario;
         }
 
+
+        public async Task DeletaUsuario(int id)
+        {
+            var usuario = await _dal.RecuperarPor(u => u.Id == id);
+            if (usuario == null)
+            {
+                throw new ApplicationException($"Usuário com ID {id} não encontrado.");
+            }
+            usuario.LockoutEnabled = true;
+            usuario.Ativo = false;
+            await _dal.Atualizar(usuario);
+        }
     }
 }

@@ -3,92 +3,184 @@
   "WorkspaceRootPath": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\controllers\\solicitacaoacessoprogramacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\controllers\\solicitacaoacessoprogramacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\decisaorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\decisaorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\solicitacaoacessoprogramarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\solicitacaoacessoprogramarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\responses\\solicitacaoacessoprogramaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\responses\\solicitacaoacessoprogramaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\arearequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\arearequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\controllers\\programacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\controllers\\programacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\modelos\\solicitacaoacessoprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\modelos\\solicitacaoacessoprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\enums\\permissao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\enums\\permissao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\modelos\\programa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\modelos\\programa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\enums\\perfilenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\enums\\perfilenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\modelos\\usuarioworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\modelos\\usuarioworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\modelos\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\modelos\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250925165842_AjustandoPermissoesParaoIdentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Workflow.Shared.Data\\Migrations\\20250925165842_AjustandoPermissoesParaoIdentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\controllers\\usuarioworkflowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\controllers\\usuarioworkflowcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\controllers\\solicitacaoacessoprogramacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\controllers\\solicitacaoacessoprogramacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\responses\\usuarioworkflowresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\responses\\usuarioworkflowresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\controllers\\areacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\controllers\\areacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\responses\\arearesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\responses\\arearesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\programarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\programarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\responses\\programaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\responses\\programaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\controllers\\programacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\controllers\\programacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\arearequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\arearequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\responses\\solicitacaoacessoprogramaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\responses\\solicitacaoacessoprogramaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\usuarioworkflowupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\usuarioworkflowupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\usuarioworkflowrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\usuarioworkflowrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\modelos\\usuarioworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\modelos\\usuarioworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\modelos\\programa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\modelos\\programa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\enums\\permissao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\enums\\permissao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\helper\\logincadastrarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\helper\\logincadastrarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\helper\\tokenrefreshrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\helper\\tokenrefreshrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\modelos\\perfildeacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\modelos\\perfildeacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\helper\\usuarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\helper\\usuarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\seed\\seedroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\seed\\seedroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\helper\\enumwithvaluesschemafilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\helper\\enumwithvaluesschemafilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\helper\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\helper\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\helper\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\helper\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\helper\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\helper\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\enums\\perfilenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\enums\\perfilenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\modelos\\pessoacomacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\modelos\\pessoacomacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\helper\\senhaupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\helper\\senhaupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\helper\\loginupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\helper\\loginupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\solicitacaoacessoprogramarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\solicitacaoacessoprogramarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\areaupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\areaupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\programaupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\programaupdaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250925135923_AdicionandoSoftDelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Workflow.Shared.Data\\Migrations\\20250925135923_AdicionandoSoftDelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\workflow.shared.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\workflow.shared.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\modelos\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\modelos\\area.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.models\\modelos\\solicitacaoacessoprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD303BB2-1447-481E-A173-CD5ED225B7C0}|Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj|solutionrelative:workflow.shared.models\\modelos\\solicitacaoacessoprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250925133158_AdicionandoCamposDeObservacaoNaSolicitacaoEIdSolicitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Workflow.Shared.Data\\Migrations\\20250925133158_AdicionandoCamposDeObservacaoNaSolicitacaoEIdSolicitante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\programarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\programarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\decisaorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\decisaorequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\responses\\programaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\responses\\programaresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\migrations\\20250923172241_adicionandocolunapermissoesefinalizadonatabelasolicitacaoacessoprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\migrations\\20250923172241_adicionandocolunapermissoesefinalizadonatabelasolicitacaoacessoprograma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\migrations\\20250922162847_vinculandousuarioidentitycomusuarioworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\migrations\\20250922162847_vinculandousuarioidentitycomusuarioworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\migrations\\20250919195111_tornandocamporesponsavelareanullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\migrations\\20250919195111_tornandocamporesponsavelareanullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\migrations\\20250919173213_subindo primeira migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\migrations\\20250919173213_subindo primeira migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\responses\\arearesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\responses\\arearesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\banco\\dal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -99,30 +191,6 @@
       "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\requests\\usuarioworkflowrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\requests\\usuarioworkflowrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\workflow.shared.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\workflow.shared.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\migrations\\20250922162847_vinculandousuarioidentitycomusuarioworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\migrations\\20250922162847_vinculandousuarioidentitycomusuarioworkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250922162641_VinculandoUsuarioIdentityComUsuarioWorkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Workflow.Shared.Data\\Migrations\\20250922162641_VinculandoUsuarioIdentityComUsuarioWorkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -131,32 +199,12 @@
       "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\banco\\workflowdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\modelos\\pessoacomacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\modelos\\pessoacomacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250922162328_VinculandoUsuarioIdentityComUsuarioWorkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Workflow.Shared.Data\\Migrations\\20250922162328_VinculandoUsuarioIdentityComUsuarioWorkflow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\workflowapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\workflowapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\migrations\\20250919195111_tornandocamporesponsavelareanullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\migrations\\20250919195111_tornandocamporesponsavelareanullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\responses\\usuarioworkflowresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\responses\\usuarioworkflowresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\modelos\\perfildeacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\modelos\\perfildeacesso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\helper\\tokenrefreshrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|solutionrelative:workflowapi\\helper\\tokenrefreshrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BF55724D-3089-4098-91EF-635BAF045351}|WorkflowAPI\\WorkflowAPI.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflowapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -181,10 +229,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Modelos\\LoginRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Workflow.Shared.Data\\Modelos\\LoginRequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|c:\\users\\alyss\\source\\repos\\workflowapi\\workflow.shared.data\\migrations\\20250919173213_subindo primeira migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C282CEA5-0033-4109-86E8-DC26123D1C59}|Workflow.Shared.Data\\Workflow.Shared.Data.csproj|solutionrelative:workflow.shared.data\\migrations\\20250919173213_subindo primeira migration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -194,37 +238,205 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "20250925165842_AjustandoPermissoesParaoIdentity.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250925165842_AjustandoPermissoesParaoIdentity.cs",
+              "RelativeDocumentMoniker": "Workflow.Shared.Data\\Migrations\\20250925165842_AjustandoPermissoesParaoIdentity.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250925165842_AjustandoPermissoesParaoIdentity.cs",
+              "RelativeToolTip": "Workflow.Shared.Data\\Migrations\\20250925165842_AjustandoPermissoesParaoIdentity.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T16:58:42.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SeedRoles.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Data\\Seed\\SeedRoles.cs",
+              "RelativeDocumentMoniker": "Workflow.Shared.Data\\Seed\\SeedRoles.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Data\\Seed\\SeedRoles.cs",
+              "RelativeToolTip": "Workflow.Shared.Data\\Seed\\SeedRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T16:43:17.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PerfilEnum.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Enums\\PerfilEnum.cs",
+              "RelativeDocumentMoniker": "Workflow.Shared.Data\\Enums\\PerfilEnum.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Enums\\PerfilEnum.cs",
+              "RelativeToolTip": "Workflow.Shared.Data\\Enums\\PerfilEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T16:24:56.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "SenhaUpdateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\WorkflowAPI\\Helper\\SenhaUpdateRequest.cs",
+              "RelativeDocumentMoniker": "WorkflowAPI\\Helper\\SenhaUpdateRequest.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\WorkflowAPI\\Helper\\SenhaUpdateRequest.cs",
+              "RelativeToolTip": "WorkflowAPI\\Helper\\SenhaUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T16:02:46.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250925135923_AdicionandoSoftDelete.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250925135923_AdicionandoSoftDelete.cs",
+              "RelativeDocumentMoniker": "Workflow.Shared.Data\\Migrations\\20250925135923_AdicionandoSoftDelete.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250925135923_AdicionandoSoftDelete.cs",
+              "RelativeToolTip": "Workflow.Shared.Data\\Migrations\\20250925135923_AdicionandoSoftDelete.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:59:23.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20250925133158_AdicionandoCamposDeObservacaoNaSolicitacaoEIdSolicitante.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250925133158_AdicionandoCamposDeObservacaoNaSolicitacaoEIdSolicitante.cs",
+              "RelativeDocumentMoniker": "Workflow.Shared.Data\\Migrations\\20250925133158_AdicionandoCamposDeObservacaoNaSolicitacaoEIdSolicitante.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250925133158_AdicionandoCamposDeObservacaoNaSolicitacaoEIdSolicitante.cs",
+              "RelativeToolTip": "Workflow.Shared.Data\\Migrations\\20250925133158_AdicionandoCamposDeObservacaoNaSolicitacaoEIdSolicitante.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-25T13:31:58.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsuarioResponse.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Helper\\UsuarioResponse.cs",
+              "RelativeDocumentMoniker": "WorkflowAPI\\Helper\\UsuarioResponse.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Helper\\UsuarioResponse.cs",
+              "RelativeToolTip": "WorkflowAPI\\Helper\\UsuarioResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T19:41:57.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "LoginUpdateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Helper\\LoginUpdateRequest.cs",
+              "RelativeDocumentMoniker": "WorkflowAPI\\Helper\\LoginUpdateRequest.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Helper\\LoginUpdateRequest.cs",
+              "RelativeToolTip": "WorkflowAPI\\Helper\\LoginUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T19:25:07.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EnumWithValuesSchemaFilter.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Helper\\EnumWithValuesSchemaFilter.cs",
+              "RelativeDocumentMoniker": "WorkflowAPI\\Helper\\EnumWithValuesSchemaFilter.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Helper\\EnumWithValuesSchemaFilter.cs",
+              "RelativeToolTip": "WorkflowAPI\\Helper\\EnumWithValuesSchemaFilter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T19:01:28.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProgramaUpdateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\ProgramaUpdateRequest.cs",
+              "RelativeDocumentMoniker": "WorkflowAPI\\Requests\\ProgramaUpdateRequest.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\ProgramaUpdateRequest.cs",
+              "RelativeToolTip": "WorkflowAPI\\Requests\\ProgramaUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T18:52:29.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UsuarioWorkflowUpdateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\UsuarioWorkflowUpdateRequest.cs",
+              "RelativeDocumentMoniker": "WorkflowAPI\\Requests\\UsuarioWorkflowUpdateRequest.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\UsuarioWorkflowUpdateRequest.cs",
+              "RelativeToolTip": "WorkflowAPI\\Requests\\UsuarioWorkflowUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T18:50:23.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AreaUpdateRequest.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\AreaUpdateRequest.cs",
+              "RelativeDocumentMoniker": "WorkflowAPI\\Requests\\AreaUpdateRequest.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\AreaUpdateRequest.cs",
+              "RelativeToolTip": "WorkflowAPI\\Requests\\AreaUpdateRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T18:47:55.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20250923172241_AdicionandoColunaPermissoesEFinalizadoNaTabelaSolicitacaoAcessoPrograma.cs",
+              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250923172241_AdicionandoColunaPermissoesEFinalizadoNaTabelaSolicitacaoAcessoPrograma.cs",
+              "RelativeDocumentMoniker": "Workflow.Shared.Data\\Migrations\\20250923172241_AdicionandoColunaPermissoesEFinalizadoNaTabelaSolicitacaoAcessoPrograma.cs",
+              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250923172241_AdicionandoColunaPermissoesEFinalizadoNaTabelaSolicitacaoAcessoPrograma.cs",
+              "RelativeToolTip": "Workflow.Shared.Data\\Migrations\\20250923172241_AdicionandoColunaPermissoesEFinalizadoNaTabelaSolicitacaoAcessoPrograma.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T17:22:41.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Permissao.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Enums\\Permissao.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Models\\Enums\\Permissao.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Enums\\Permissao.cs",
               "RelativeToolTip": "Workflow.Shared.Models\\Enums\\Permissao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-23T16:31:15.382Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 37,
               "Title": "DecisaoRequest.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\DecisaoRequest.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Requests\\DecisaoRequest.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\DecisaoRequest.cs",
               "RelativeToolTip": "WorkflowAPI\\Requests\\DecisaoRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-23T13:59:54.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Helper\\LoginRequest.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Helper\\LoginRequest.cs",
@@ -237,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 40,
               "Title": "20250922162847_VinculandoUsuarioIdentityComUsuarioWorkflow.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250922162847_VinculandoUsuarioIdentityComUsuarioWorkflow.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Migrations\\20250922162847_VinculandoUsuarioIdentityComUsuarioWorkflow.cs",
@@ -249,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 47,
               "Title": "20250922162641_VinculandoUsuarioIdentityComUsuarioWorkflow.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250922162641_VinculandoUsuarioIdentityComUsuarioWorkflow.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Migrations\\20250922162641_VinculandoUsuarioIdentityComUsuarioWorkflow.cs",
@@ -261,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 49,
               "Title": "20250922162328_VinculandoUsuarioIdentityComUsuarioWorkflow.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250922162328_VinculandoUsuarioIdentityComUsuarioWorkflow.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Migrations\\20250922162328_VinculandoUsuarioIdentityComUsuarioWorkflow.cs",
@@ -273,20 +485,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Helper\\LoginResponse.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Helper\\LoginResponse.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Helper\\LoginResponse.cs",
               "RelativeToolTip": "WorkflowAPI\\Helper\\LoginResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAA6wAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-22T14:05:11.639Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "20250919195111_TornandoCampoResponsavelAreaNullable.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250919195111_TornandoCampoResponsavelAreaNullable.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Migrations\\20250919195111_TornandoCampoResponsavelAreaNullable.cs",
@@ -298,46 +510,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SolicitacaoAcessoProgramaController.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Controllers\\SolicitacaoAcessoProgramaController.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Controllers\\SolicitacaoAcessoProgramaController.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Controllers\\SolicitacaoAcessoProgramaController.cs",
               "RelativeToolTip": "WorkflowAPI\\Controllers\\SolicitacaoAcessoProgramaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAANwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T18:43:13.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "SolicitacaoAcessoProgramaResponse.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Responses\\SolicitacaoAcessoProgramaResponse.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Responses\\SolicitacaoAcessoProgramaResponse.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Responses\\SolicitacaoAcessoProgramaResponse.cs",
               "RelativeToolTip": "WorkflowAPI\\Responses\\SolicitacaoAcessoProgramaResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABUAQAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T18:20:17.276Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 28,
               "Title": "SolicitacaoAcessoProgramaRequest.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\SolicitacaoAcessoProgramaRequest.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Requests\\SolicitacaoAcessoProgramaRequest.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\SolicitacaoAcessoProgramaRequest.cs",
               "RelativeToolTip": "WorkflowAPI\\Requests\\SolicitacaoAcessoProgramaRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAABuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T18:19:30.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 42,
               "Title": "20250919173213_Subindo primeira migration.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Migrations\\20250919173213_Subindo primeira migration.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Migrations\\20250919173213_Subindo primeira migration.cs",
@@ -355,14 +567,14 @@
               "RelativeDocumentMoniker": "WorkflowAPI\\Controllers\\ProgramaController.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Controllers\\ProgramaController.cs",
               "RelativeToolTip": "WorkflowAPI\\Controllers\\ProgramaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-19T16:56:59.212Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 38,
               "Title": "ProgramaResponse.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Responses\\ProgramaResponse.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Responses\\ProgramaResponse.cs",
@@ -375,7 +587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 36,
               "Title": "ProgramaRequest.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\ProgramaRequest.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Requests\\ProgramaRequest.cs",
@@ -388,46 +600,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 43,
               "Title": "AreaResponse.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Responses\\AreaResponse.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Responses\\AreaResponse.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Responses\\AreaResponse.cs",
               "RelativeToolTip": "WorkflowAPI\\Responses\\AreaResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T15:50:59.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-15T15:50:59.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AreaRequest.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\AreaRequest.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Requests\\AreaRequest.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\AreaRequest.cs",
               "RelativeToolTip": "WorkflowAPI\\Requests\\AreaRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T15:49:00.735Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "AreaController.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Controllers\\AreaController.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Controllers\\AreaController.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Controllers\\AreaController.cs",
               "RelativeToolTip": "WorkflowAPI\\Controllers\\AreaController.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAA9wFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T14:32:32.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 17,
               "Title": "TokenRefreshRequest.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Helper\\TokenRefreshRequest.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Helper\\TokenRefreshRequest.cs",
@@ -435,49 +646,51 @@
               "RelativeToolTip": "WorkflowAPI\\Helper\\TokenRefreshRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T23:04:15.439Z"
+              "WhenOpened": "2025-09-12T23:04:15.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 16,
               "Title": "TokenService.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Services\\TokenService.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Services\\TokenService.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Services\\TokenService.cs",
               "RelativeToolTip": "WorkflowAPI\\Services\\TokenService.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAA4wBQAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T21:30:03.398Z"
+              "WhenOpened": "2025-09-12T21:30:03.398Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 14,
               "Title": "UsuarioService.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Services\\UsuarioService.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Services\\UsuarioService.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Services\\UsuarioService.cs",
               "RelativeToolTip": "WorkflowAPI\\Services\\UsuarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABCAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAswDQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-12T21:27:50.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 6,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Controllers\\AuthController.cs",
               "RelativeToolTip": "WorkflowAPI\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-12T19:59:19.454Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 51,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Dockerfile",
               "RelativeDocumentMoniker": "WorkflowAPI\\Dockerfile",
@@ -489,69 +702,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 25,
               "Title": "PessoaComAcesso.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Modelos\\PessoaComAcesso.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Modelos\\PessoaComAcesso.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Modelos\\PessoaComAcesso.cs",
               "RelativeToolTip": "Workflow.Shared.Data\\Modelos\\PessoaComAcesso.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T18:48:48.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "LoginCadastraRequest.cs",
-              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\WorkflowAPI\\Helper\\LoginCadastraRequest.cs",
-              "RelativeDocumentMoniker": "WorkflowAPI\\Helper\\LoginCadastraRequest.cs",
-              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\WorkflowAPI\\Helper\\LoginCadastraRequest.cs",
-              "RelativeToolTip": "WorkflowAPI\\Helper\\LoginCadastraRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-12T18:36:28.071Z",
+              "WhenOpened": "2025-09-12T18:48:48.173Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 3,
               "Title": "UsuarioWorkflowResponse.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Responses\\UsuarioWorkflowResponse.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Responses\\UsuarioWorkflowResponse.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Responses\\UsuarioWorkflowResponse.cs",
               "RelativeToolTip": "WorkflowAPI\\Responses\\UsuarioWorkflowResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T20:07:58.848Z"
+              "WhenOpened": "2025-09-11T20:07:58.848Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 10,
               "Title": "UsuarioWorkflowRequest.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\UsuarioWorkflowRequest.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Requests\\UsuarioWorkflowRequest.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Requests\\UsuarioWorkflowRequest.cs",
               "RelativeToolTip": "WorkflowAPI\\Requests\\UsuarioWorkflowRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T19:50:38.725Z"
+              "WhenOpened": "2025-09-11T19:50:38.725Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "UsuarioWorkflowController.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Controllers\\UsuarioWorkflowController.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Controllers\\UsuarioWorkflowController.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Controllers\\UsuarioWorkflowController.cs",
               "RelativeToolTip": "WorkflowAPI\\Controllers\\UsuarioWorkflowController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwFEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T19:45:17.879Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 53,
               "Title": "20250911161114_AdicionandoTabelasDoWorkflow.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Banco\\Migrations\\20250911161114_AdicionandoTabelasDoWorkflow.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Banco\\Migrations\\20250911161114_AdicionandoTabelasDoWorkflow.cs",
@@ -563,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 48,
               "Title": "WorkflowDbContext.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Banco\\WorkflowDbContext.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Banco\\WorkflowDbContext.cs",
@@ -575,72 +778,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 34,
               "Title": "SolicitacaoAcessoPrograma.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Modelos\\SolicitacaoAcessoPrograma.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Models\\Modelos\\SolicitacaoAcessoPrograma.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Modelos\\SolicitacaoAcessoPrograma.cs",
               "RelativeToolTip": "Workflow.Shared.Models\\Modelos\\SolicitacaoAcessoPrograma.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA5wCMAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T13:49:52.811Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PerfilEnum.cs",
-              "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Enums\\PerfilEnum.cs",
-              "RelativeDocumentMoniker": "Workflow.Shared.Models\\Enums\\PerfilEnum.cs",
-              "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Enums\\PerfilEnum.cs",
-              "RelativeToolTip": "Workflow.Shared.Models\\Enums\\PerfilEnum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T13:27:44.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UsuarioWorkflow.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Modelos\\UsuarioWorkflow.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Models\\Modelos\\UsuarioWorkflow.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Modelos\\UsuarioWorkflow.cs",
               "RelativeToolTip": "Workflow.Shared.Models\\Modelos\\UsuarioWorkflow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T13:25:42.849Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 33,
               "Title": "Area.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Modelos\\Area.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Models\\Modelos\\Area.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Modelos\\Area.cs",
               "RelativeToolTip": "Workflow.Shared.Models\\Modelos\\Area.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T12:59:47.397Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Programa.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Modelos\\Programa.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Models\\Modelos\\Programa.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Modelos\\Programa.cs",
               "RelativeToolTip": "Workflow.Shared.Models\\Modelos\\Programa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-11T12:56:49.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 45,
               "Title": "DAL.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Banco\\DAL.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Banco\\DAL.cs",
@@ -648,12 +838,11 @@
               "RelativeToolTip": "Workflow.Shared.Data\\Banco\\DAL.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T12:53:08.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-11T12:53:08.015Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 54,
               "Title": "20250910202025_identityMigration.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Banco\\Migrations\\20250910202025_identityMigration.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Banco\\Migrations\\20250910202025_identityMigration.cs",
@@ -664,19 +853,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 44,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "WorkflowAPI\\Properties\\launchSettings.json",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Properties\\launchSettings.json",
               "RelativeToolTip": "WorkflowAPI\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-09-10T20:14:01.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 56,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Modelos\\LoginRequest.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Modelos\\LoginRequest.cs",
@@ -687,7 +876,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 50,
               "Title": "WorkflowAPI.csproj",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\WorkflowAPI\\WorkflowAPI.csproj",
               "RelativeDocumentMoniker": "WorkflowAPI\\WorkflowAPI.csproj",
@@ -699,19 +888,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 18,
               "Title": "PerfilDeAcesso.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Modelos\\PerfilDeAcesso.cs",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Modelos\\PerfilDeAcesso.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Modelos\\PerfilDeAcesso.cs",
               "RelativeToolTip": "Workflow.Shared.Data\\Modelos\\PerfilDeAcesso.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T18:51:55.692Z"
+              "WhenOpened": "2025-09-10T18:51:55.692Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 32,
               "Title": "Workflow.Shared.Data.csproj",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj",
               "RelativeDocumentMoniker": "Workflow.Shared.Data\\Workflow.Shared.Data.csproj",
@@ -719,11 +909,12 @@
               "RelativeToolTip": "Workflow.Shared.Data\\Workflow.Shared.Data.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-10T18:46:32.7Z"
+              "WhenOpened": "2025-09-10T18:46:32.7Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 55,
               "Title": "20250910165109_AdicionandoEntity.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Banco\\Migrations\\20250910165109_AdicionandoEntity.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Banco\\Migrations\\20250910165109_AdicionandoEntity.cs",
@@ -734,7 +925,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 46,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\appsettings.json",
               "RelativeDocumentMoniker": "WorkflowAPI\\appsettings.json",
@@ -746,7 +937,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 52,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
@@ -758,15 +949,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Program.cs",
               "RelativeDocumentMoniker": "WorkflowAPI\\Program.cs",
               "ToolTip": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\Program.cs",
               "RelativeToolTip": "WorkflowAPI\\Program.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFsAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowF8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T15:56:44.76Z"
+              "WhenOpened": "2025-09-10T15:56:44.76Z",
+              "EditorCaption": ""
             }
           ]
         }

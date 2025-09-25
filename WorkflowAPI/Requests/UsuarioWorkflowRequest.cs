@@ -2,5 +2,5 @@
 
 namespace WorkflowAPI.Requests
 {
-    public record UsuarioWorkflowRequest(string nome, int AreaId, PerfilEnum Perfil);
+    public record UsuarioWorkflowRequest(string nome, int AreaId);
 }

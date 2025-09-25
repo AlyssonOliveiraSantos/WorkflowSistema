@@ -2,5 +2,5 @@
 
 namespace WorkflowAPI.Requests
 {
-    public record DecisaoRequest(TipoDecisao Tipo, bool Aprovado);
+    public record DecisaoRequest(TipoDecisao Tipo, string? observacao, bool Aprovado);
 }

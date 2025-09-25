@@ -148,6 +148,9 @@ namespace Workflow.Shared.Data.Migrations
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
 
+                    b.Property<int>("Perfil")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("NormalizedName")
@@ -168,6 +171,9 @@ namespace Workflow.Shared.Data.Migrations
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -241,6 +247,9 @@ namespace Workflow.Shared.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Descricao")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -269,6 +278,9 @@ namespace Workflow.Shared.Data.Migrations
 
                     b.Property<int>("AreaId")
                         .HasColumnType("int");
+
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
 
                     b.Property<string>("NomePrograma")
                         .IsRequired()
@@ -310,7 +322,28 @@ namespace Workflow.Shared.Data.Migrations
                     b.Property<DateTime>("DataSolicitacao")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool>("Finalizado")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("ObservacaoGerente")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ObservacaoResponsavelPrograma")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ObservacaoSolicitante")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ObservacaoTI")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Permissoes")
+                        .HasColumnType("int");
+
                     b.Property<int>("ProgramaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SolicitanteWorkflowId")
                         .HasColumnType("int");
 
                     b.Property<int>("UsuarioWorkflowId")
@@ -336,12 +369,12 @@ namespace Workflow.Shared.Data.Migrations
                     b.Property<int>("AreaId")
                         .HasColumnType("int");
 
+                    b.Property<bool>("Ativo")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Perfil")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

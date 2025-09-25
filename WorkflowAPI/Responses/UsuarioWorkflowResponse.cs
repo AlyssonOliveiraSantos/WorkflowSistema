@@ -3,5 +3,5 @@
 namespace WorkflowAPI.Responses
 {
 
-    public record UsuarioWorkflowResponse(int id, string Nome, int AreaId, PerfilEnum Perfil);
+    public record UsuarioWorkflowResponse(int id, string Nome, int AreaId);
 }

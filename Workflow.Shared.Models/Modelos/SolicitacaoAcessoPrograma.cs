@@ -10,8 +10,10 @@ namespace Workflow.Shared.Modelos.Modelos
     public class SolicitacaoAcessoPrograma
     {
         public int Id { get; set; }
+        public int SolicitanteWorkflowId { get; set; }
         public int UsuarioWorkflowId { get; set; }
-        public Permissao Permissoes { get; set; }
+        public string? ObservacaoSolicitante { get; set; } = string.Empty;
+
 
 
         public int ProgramaId { get; set; }
@@ -19,14 +21,19 @@ namespace Workflow.Shared.Modelos.Modelos
 
         public bool? AprovadoGerente { get; set; }
         public DateTime? DataAprovacaoGerente { get; set; }
+        public string? ObservacaoGerente { get; set; } = string.Empty;
 
         public bool? AprovadoResponsavelPrograma { get; set; }
         public DateTime? DataAprovacaoResponsavelPrograma { get; set; }
+        public string? ObservacaoResponsavelPrograma { get; set; } = string.Empty;
 
         public bool? AprovadoTI { get; set; }
         public DateTime? DataAprovacaoTI { get; set; }
+        public string? ObservacaoTI { get; set; } = string.Empty;
 
-        public bool Finalizado { get; set; }
+        public Permissao Permissoes { get; set; }
+
+        public bool Finalizado { get; set; } = false;
 
 
 

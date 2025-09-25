@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Workflow.Shared.Data.Banco;
 using Workflow.Shared.Modelos.Enums;
 using Workflow.Shared.Modelos.Modelos;
@@ -8,6 +9,7 @@ using WorkflowAPI.Services;
 
 namespace WorkflowAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class SolicitacaoAcessoProgramaController : ControllerBase
@@ -35,14 +37,19 @@ namespace WorkflowAPI.Controllers
             var solicitacoesResponse = solicitacoes.Select(
                 s => new SolicitacaoAcessoProgramaResponse(
                     s.Id,
+                    s.SolicitanteWorkflowId,
+                    s.ObservacaoSolicitante,
                     s.UsuarioWorkflowId,
                     s.ProgramaId,
                     s.DataSolicitacao,
                     s.AprovadoGerente,
+                    s.ObservacaoGerente,
                     s.DataAprovacaoGerente,
                     s.AprovadoResponsavelPrograma,
+                    s.ObservacaoResponsavelPrograma,
                     s.DataAprovacaoResponsavelPrograma,
                     s.AprovadoTI,
+                    s.ObservacaoTI,
                     s.DataAprovacaoTI,
                     s.Permissoes,
                     s.Finalizado
@@ -62,14 +69,19 @@ namespace WorkflowAPI.Controllers
             var solicitacoesResponse = solicitacoes.Select(
                 s => new SolicitacaoAcessoProgramaResponse(
                     s.Id,
+                    s.SolicitanteWorkflowId,
+                    s.ObservacaoSolicitante,
                     s.UsuarioWorkflowId,
                     s.ProgramaId,
                     s.DataSolicitacao,
                     s.AprovadoGerente,
+                    s.ObservacaoGerente,
                     s.DataAprovacaoGerente,
                     s.AprovadoResponsavelPrograma,
+                    s.ObservacaoResponsavelPrograma,
                     s.DataAprovacaoResponsavelPrograma,
                     s.AprovadoTI,
+                    s.ObservacaoTI,
                     s.DataAprovacaoTI,
                     s.Permissoes,
                     s.Finalizado
@@ -97,14 +109,19 @@ namespace WorkflowAPI.Controllers
             var solicitacaoResponse = pendentes.Select(
                 s => new SolicitacaoAcessoProgramaResponse(
                     s.Id,
+                    s.SolicitanteWorkflowId,
+                    s.ObservacaoSolicitante,
                     s.UsuarioWorkflowId,
                     s.ProgramaId,
                     s.DataSolicitacao,
                     s.AprovadoGerente,
+                    s.ObservacaoGerente,
                     s.DataAprovacaoGerente,
                     s.AprovadoResponsavelPrograma,
+                    s.ObservacaoResponsavelPrograma,
                     s.DataAprovacaoResponsavelPrograma,
                     s.AprovadoTI,
+                    s.ObservacaoTI,
                     s.DataAprovacaoTI,
                     s.Permissoes,
                     s.Finalizado
@@ -115,8 +132,30 @@ namespace WorkflowAPI.Controllers
             [HttpPost]
         public async Task<IActionResult> Post([FromBody] SolicitacaoAcessoProgramaRequest solicitacaoRequest)
         {
+            var usuarioLogado = await _userService.ObterUsuarioWorkflowLogadoAsync(User);
+            if (usuarioLogado == null)
+                return NotFound("Usuário logado não encontrado.");
+            var usuarioWorkflowExistente = await _dalUsuarioWorkflow.RecuperarPor(u => u.Id == solicitacaoRequest.UsuarioWorkflowId);
+            if (usuarioWorkflowExistente == null)
+                return NotFound("Usuário Workflow para o qual o acesso está sendo solicitado não encontrado.");
+            if (usuarioWorkflowExistente.Ativo == false)
+                return BadRequest("Usuário Workflow para o qual o acesso está sendo solicitado está inativo.");
+            var programaExistente = await _dalPrograma.RecuperarPor(p => p.Id == solicitacaoRequest.ProgramaId);
+            if (programaExistente == null)
+                return NotFound("Programa para o qual o acesso está sendo solicitado não encontrado.");
+            if (programaExistente.Ativo == false)
+                return BadRequest("Programa para o qual o acesso está sendo solicitado está inativo.");
+            var areaDoPrograma = await _dalArea.RecuperarPor(a => a.Id == programaExistente.AreaId);
+            if (areaDoPrograma == null)
+                return NotFound("Área associada ao programa não encontrada.");
+            if (areaDoPrograma.Ativo == false)
+                return BadRequest("Área associada ao programa está inativa.");
+
+
             var solicitacao = new SolicitacaoAcessoPrograma
             {
+                SolicitanteWorkflowId = usuarioLogado.Id,
+                ObservacaoSolicitante = solicitacaoRequest.observacao,
                 UsuarioWorkflowId = solicitacaoRequest.UsuarioWorkflowId,
                 ProgramaId = solicitacaoRequest.ProgramaId,
                 DataSolicitacao = DateTime.Now,
@@ -140,6 +179,7 @@ namespace WorkflowAPI.Controllers
             if (usuarioAtual == null)
                 return NotFound("Usuário logado não encontrado.");
 
+
             var solicitacao = await _dalSolicitacao.RecuperarPor(s => s.Id == id);
             if (solicitacao == null)
                 return NotFound("Solicitação não encontrada.");
@@ -149,11 +189,10 @@ namespace WorkflowAPI.Controllers
             switch (request.Tipo)
             {
                 case TipoDecisao.Gerente:
-                    if (usuarioAtual.AreaId != (await _dalUsuarioWorkflow.RecuperarPor(u => u.Id == solicitacao.UsuarioWorkflowId)).AreaId)
-                        return Forbid("Usuário não pertence à mesma área.");
                     if (!PodeAprovarComoGerente(solicitacao, usuarioAtual))
                         return Forbid("Usuário não é o gerente da área.");
                     solicitacao.AprovadoGerente = request.Aprovado;
+                    solicitacao.ObservacaoGerente = request.observacao;
                     if (request.Aprovado == false)
                         solicitacao.Finalizado = true;
                     solicitacao.DataAprovacaoGerente = DateTime.Now;
@@ -164,6 +203,7 @@ namespace WorkflowAPI.Controllers
                     if (!PodeAprovarComoResponsavelPrograma(solicitacao, usuarioAtual))
                         return Forbid("Você não é responsável pela área do programa.");
                     solicitacao.AprovadoResponsavelPrograma = request.Aprovado;
+                    solicitacao.ObservacaoResponsavelPrograma = request.observacao;
                     if (request.Aprovado == false)
                         solicitacao.Finalizado = true;
                     solicitacao.DataAprovacaoResponsavelPrograma = DateTime.Now;
@@ -173,6 +213,7 @@ namespace WorkflowAPI.Controllers
                     if (!PodeAprovarComoTI(solicitacao, usuarioAtual))
                         return Forbid("Usuário não pertence à área de TI.");
                     solicitacao.AprovadoTI = request.Aprovado;
+                    solicitacao.ObservacaoTI = request.observacao;
                     if (request.Aprovado == false)
                         solicitacao.Finalizado = true;
                     else

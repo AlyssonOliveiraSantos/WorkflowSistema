@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Workflow.Shared.Modelos.Enums
+namespace Workflow.Shared.Data.Enums
 {
     public enum PerfilEnum
     {
-        Admin = 1,
-        Padrao = 2,
-        Gerente = 3
+        Padrao = 1,
+        Gerente = 2,
+        Admin = 3
     }
 }
