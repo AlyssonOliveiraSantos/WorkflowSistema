@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Workflow.Shared.Modelos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9d7e1aeabc5bf9618f3a14218af585a5461d0ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1bd9e98a78f9cf392075e7247fc7a9870fb08d94")]
 [assembly: System.Reflection.AssemblyProductAttribute("Workflow.Shared.Modelos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Workflow.Shared.Modelos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

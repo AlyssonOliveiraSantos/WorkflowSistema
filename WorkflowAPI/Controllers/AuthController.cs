@@ -41,8 +41,6 @@
             return Ok(User.Claims.Select(c => new { c.Type, c.Value }));
         }
 
-
-        [Authorize(Roles = "Admin")]
         [HttpPost("cadastro")]
 
         public async Task<IActionResult> CadastraUsuario([FromBody] LoginRequest request)

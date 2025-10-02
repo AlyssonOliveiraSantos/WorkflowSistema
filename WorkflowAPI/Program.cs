@@ -17,6 +17,15 @@ using WorkflowAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAngular",
+        policy => policy
+            .WithOrigins("http://localhost:4200")
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -40,6 +49,13 @@ builder.Services.AddTransient<DAL<Area>>();
 builder.Services.AddTransient<DAL<Programa>>();
 builder.Services.AddTransient<DAL<UsuarioWorkflow>>();
 builder.Services.AddTransient<DAL<SolicitacaoAcessoPrograma>>();
+
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+        options.JsonSerializerOptions.WriteIndented = true;
+    });
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -90,11 +106,13 @@ builder.Services.AddAuthentication(options =>
         ValidateAudience = false,
         ValidateIssuer = false,
         ClockSkew = TimeSpan.Zero,
-        RoleClaimType = ClaimTypes.Role
+        RoleClaimType = "perfil"
     };
 });
-
+builder.Services.AddAuthorization();
 var app = builder.Build();
+
+app.UseCors("AllowAngular");
 
 using (var scope = app.Services.CreateScope())
 {

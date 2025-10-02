@@ -69,27 +69,6 @@
       }
     },
     "/api/Area/{id}": {
-      "delete": {
-        "tags": [
-          "Area"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
       "put": {
         "tags": [
           "Area"
@@ -129,32 +108,34 @@
             "description": "OK"
           }
         }
+      },
+      "delete": {
+        "tags": [
+          "Area"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
-    "/api/Auth/cadastro": {
-      "post": {
+    "/api/Auth": {
+      "get": {
         "tags": [
           "Auth"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginCadastraRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginCadastraRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/LoginCadastraRequest"
-              }
-            }
-          }
-        },
         "responses": {
           "200": {
             "description": "OK"
@@ -167,6 +148,37 @@
         "tags": [
           "Auth"
         ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Auth/cadastro": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -236,6 +248,109 @@
         }
       }
     },
+    "/api/Auth/{id}": {
+      "put": {
+        "tags": [
+          "Auth"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginUpdateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginUpdateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginUpdateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Auth"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SenhaUpdateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SenhaUpdateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SenhaUpdateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Auth"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Programa": {
       "get": {
         "tags": [
@@ -255,17 +370,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProgramaResponse"
+                "$ref": "#/components/schemas/ProgramaRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/ProgramaResponse"
+                "$ref": "#/components/schemas/ProgramaRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/ProgramaResponse"
+                "$ref": "#/components/schemas/ProgramaRequest"
               }
             }
           }
@@ -631,6 +746,10 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "ativo": {
+            "type": "boolean",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -641,26 +760,12 @@
           "tipo": {
             "$ref": "#/components/schemas/TipoDecisao"
           },
+          "observacao": {
+            "type": "string",
+            "nullable": true
+          },
           "aprovado": {
             "type": "boolean"
-          }
-        },
-        "additionalProperties": false
-      },
-      "LoginCadastraRequest": {
-        "type": "object",
-        "properties": {
-          "username": {
-            "type": "string",
-            "nullable": true
-          },
-          "usuarioWorkflowId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "password": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false
@@ -679,32 +784,34 @@
         },
         "additionalProperties": false
       },
-      "PerfilEnum": {
-        "enum": [
-          "Admin = 1",
-          "Padrao = 2",
-          "Gerente = 3"
-        ],
-        "type": "integer",
-        "format": "int32"
+      "LoginUpdateRequest": {
+        "type": "object",
+        "properties": {
+          "usuarioWorkflowId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "ativo": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       },
       "Permissao": {
         "enum": [
           "Nenhuma = 0",
           "Incluir = 1",
-          "Modificar = 2",
-          "Consultar = 4",
+          "Consultar = 2",
+          "Modificar = 4",
           "Excluir = 8"
         ],
         "type": "string"
       },
-      "ProgramaResponse": {
+      "ProgramaRequest": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "nome": {
             "type": "string",
             "nullable": true
@@ -727,6 +834,24 @@
             "type": "integer",
             "format": "int32",
             "nullable": true
+          },
+          "ativo": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SenhaUpdateRequest": {
+        "type": "object",
+        "properties": {
+          "senhaAtual": {
+            "type": "string",
+            "nullable": true
+          },
+          "senhaNova": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -737,6 +862,10 @@
           "usuarioWorkflowId": {
             "type": "integer",
             "format": "int32"
+          },
+          "observacao": {
+            "type": "string",
+            "nullable": true
           },
           "programaId": {
             "type": "integer",
@@ -777,9 +906,6 @@
           "areaId": {
             "type": "integer",
             "format": "int32"
-          },
-          "perfil": {
-            "$ref": "#/components/schemas/PerfilEnum"
           }
         },
         "additionalProperties": false
@@ -796,8 +922,9 @@
             "format": "int32",
             "nullable": true
           },
-          "perfil": {
-            "$ref": "#/components/schemas/PerfilEnum"
+          "ativo": {
+            "type": "boolean",
+            "nullable": true
           }
         },
         "additionalProperties": false

@@ -27,22 +27,6 @@
   },
   {
     "ContainingType": "WorkflowAPI.Controllers.AreaController",
-    "Method": "DeletarArea",
-    "RelativePath": "api/Area/{id}",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WorkflowAPI.Controllers.AreaController",
     "Method": "Atualizar",
     "RelativePath": "api/Area/{id}",
     "HttpMethod": "PUT",
@@ -57,6 +41,22 @@
       {
         "Name": "areaRequest",
         "Type": "WorkflowAPI.Requests.AreaUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AreaController",
+    "Method": "DeletarArea",
+    "RelativePath": "api/Area/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -80,6 +80,74 @@
   },
   {
     "ContainingType": "WorkflowAPI.Controllers.AuthController",
+    "Method": "ListaUsuarios",
+    "RelativePath": "api/Auth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AuthController",
+    "Method": "AtualizaUsuario",
+    "RelativePath": "api/Auth/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "WorkflowAPI.Helper.LoginUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AuthController",
+    "Method": "AtualizaSenhaUsuario",
+    "RelativePath": "api/Auth/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "WorkflowAPI.Helper.SenhaUpdateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AuthController",
+    "Method": "DeletaUsuario",
+    "RelativePath": "api/Auth/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AuthController",
     "Method": "CadastraUsuario",
     "RelativePath": "api/Auth/cadastro",
     "HttpMethod": "POST",
@@ -88,7 +156,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "LoginCadastraRequest",
+        "Type": "WorkflowAPI.Helper.LoginRequest",
         "IsRequired": true
       }
     ],
@@ -155,8 +223,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "programaResponse",
-        "Type": "WorkflowAPI.Responses.ProgramaResponse",
+        "Name": "programaRequest",
+        "Type": "WorkflowAPI.Requests.ProgramaRequest",
         "IsRequired": true
       }
     ],

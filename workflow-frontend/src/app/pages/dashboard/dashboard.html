@@ -1,0 +1,22 @@
+<div class="dashboard-root">
+  <header class="topbar">
+    <nav class="tabs">
+      <div class="tab" *ngFor="let tab of tabs">
+        <span>{{ tab.label }}</span>
+        <div class="subtabs" *ngIf="tab.subTabs">
+          <div class="subtab" *ngFor="let sub of tab.subTabs">
+            <span (click)="navigateTo(sub)">{{ sub }}</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="user-section">
+      <span class="username">{{ username }}</span>
+      <button (click)="logout()">Logout</button>
+    </div>
+  </header>
+
+  <div class="dashboard-body">
+    <router-outlet></router-outlet>
+  </div>
+</div>

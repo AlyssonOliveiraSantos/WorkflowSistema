@@ -23,7 +23,7 @@ namespace WorkflowAPI.Services
                 new Claim("username", usuario.UserName),
                 new Claim("loginTimestamp", DateTime.UtcNow.ToString()),
                 new Claim("token_type", "access"),
-                new Claim(ClaimTypes.Role, roles.First())
+                new Claim("perfil", roles.First())
             };
 
             var chave = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["SymmetricSecurityKey"]));

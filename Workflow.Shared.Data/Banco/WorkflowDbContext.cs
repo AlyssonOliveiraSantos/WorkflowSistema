@@ -41,11 +41,12 @@ namespace Workflow.Shared.Data.Banco
              .HasForeignKey(a => a.ResponsavelAreaId)
              .OnDelete(DeleteBehavior.Restrict);
 
-            builder.Entity<PessoaComAcesso>().
-                HasOne( p => p.UsuarioWorkflow).
-                WithOne()
-                .HasForeignKey<PessoaComAcesso>(u => u.UsuarioWorkflowId).
-                OnDelete(DeleteBehavior.Restrict);
+            builder.Entity<PessoaComAcesso>()
+                .HasOne(p => p.UsuarioWorkflow)
+                .WithOne()
+                .HasForeignKey<PessoaComAcesso>(p => p.UsuarioWorkflowId)
+                .IsRequired(false)
+                .OnDelete(DeleteBehavior.Restrict);
 
             builder.Entity<PessoaComAcesso>(entity =>
             {

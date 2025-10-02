@@ -169,7 +169,28 @@ namespace WorkflowAPI.Controllers
                 Finalizado = false
             };
             await _dalSolicitacao.Adicionar(solicitacao);
-            return CreatedAtAction(nameof(Get), new { id = solicitacao.Id }, solicitacao);
+
+            var solicitacaoResponse = new SolicitacaoAcessoProgramaResponse(
+                    solicitacao.Id,
+                    solicitacao.SolicitanteWorkflowId,
+                    solicitacao.ObservacaoSolicitante,
+                    solicitacao.UsuarioWorkflowId,
+                    solicitacao.ProgramaId,
+                    solicitacao.DataSolicitacao,
+                    solicitacao.AprovadoGerente,
+                    solicitacao.ObservacaoGerente,
+                    solicitacao.DataAprovacaoGerente,
+                    solicitacao.AprovadoResponsavelPrograma,
+                    solicitacao.ObservacaoResponsavelPrograma,
+                    solicitacao.DataAprovacaoResponsavelPrograma,
+                    solicitacao.AprovadoTI,
+                    solicitacao.ObservacaoTI,
+                    solicitacao.DataAprovacaoTI,
+                    solicitacao.Permissoes,
+                    solicitacao.Finalizado
+                );
+
+            return CreatedAtAction(nameof(Get), new { id = solicitacao.Id }, solicitacaoResponse);
         }
 
         [HttpPut("{id}/decisao")]
@@ -247,7 +268,8 @@ namespace WorkflowAPI.Controllers
         private bool PodeAprovarComoResponsavelPrograma(SolicitacaoAcessoPrograma s, UsuarioWorkflow usuarioAtual)
         {
             return s.AprovadoGerente == true &&
-                   s.AprovadoResponsavelPrograma == null &&
+                 
+
                    s.AprovadoTI == null &&
                    s.Programa.AreaId == usuarioAtual.AreaId;
         }

@@ -34,6 +34,7 @@ namespace WorkflowAPI.Services
             {
                 UserName = loginRequest.Username,
                 NormalizedUserName = loginRequest.Username.ToUpper(),
+                UsuarioWorkflowId = null,
             };
 
             IdentityResult resultado = await _userManager.CreateAsync(usuario, loginRequest.Password);
@@ -67,7 +68,7 @@ namespace WorkflowAPI.Services
         public async Task<IEnumerable<UsuarioResponse>> ListarUsuarios()
         {
             var usuarios = await _dal.ListarTodos();
-            return usuarios.Select(u => new UsuarioResponse(u.Id, u.UserName, u.UsuarioWorkflowId ?? 0));
+            return usuarios.Select(u => new UsuarioResponse(u.Id, u.UserName, u.UsuarioWorkflowId));
         }
 
         public async Task<PessoaComAcesso> AtualizaUsuario(int id, LoginUpdateRequest request)
@@ -119,24 +120,22 @@ namespace WorkflowAPI.Services
         }
 
 
-
         public async Task<UsuarioWorkflow?> ObterUsuarioWorkflowLogadoAsync(ClaimsPrincipal user)
         {
-            var subClaim = user.FindFirst("idsub");
+            var subClaim = user.FindFirst("idsub")?.Value;
             if (subClaim == null)
                 return null;
 
-            if (!int.TryParse(subClaim.Value, out var pessoaId))
+            if (!int.TryParse(subClaim, out var pessoaId))
                 return null;
 
             var pessoa = await _dal.RecuperarPor(p => p.Id == pessoaId);
-            if (pessoa == null)
+            if (pessoa == null || pessoa.UsuarioWorkflowId == null)
                 return null;
 
             var usuario = await _dalUsuarioWorkflow.RecuperarPor(u => u.Id == pessoa.UsuarioWorkflowId.Value);
             return usuario;
         }
-
 
         public async Task DeletaUsuario(int id)
         {

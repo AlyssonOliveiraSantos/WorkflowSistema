@@ -1,0 +1,111 @@
+/* Fundo escuro na tabela */
+.table-container {
+  padding: 20px;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.85); /* fundo preto com transparência */
+  color: #f1f1f1; /* letras claras */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-container th,
+.table-container td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #444; /* borda sutil */
+}
+
+.table-container th {
+  background-color: #222; /* fundo mais escuro para cabeçalho */
+  color: #fff;
+  font-weight: bold;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.05); /* alternância de linha */
+}
+
+.table-container tr:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* destaque no hover */
+}
+
+
+
+
+
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5); /* semi-transparente */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Caixa branca do modal */
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  width: 600px;
+  max-width: 90%;
+  max-height: 80vh; /* altura máxima da tela */
+  overflow-y: auto; /* scroll se passar da altura */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+/* Botão de fechar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Títulos e textos do modal */
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  margin: 5px 0;
+}
+
+
+.btn-detalhes {
+  background-color: #4CAF50; /* verde */
+  color: #000000; /* cinza claro */
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.btn-detalhes:hover {
+  background-color: #fffdfd;
+  color: #000000; /* opcional: mudar para branco no hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.btn-detalhes:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
