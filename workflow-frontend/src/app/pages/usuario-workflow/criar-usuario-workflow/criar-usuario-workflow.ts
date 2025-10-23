@@ -42,7 +42,7 @@ export class CriarUsuarioWorkflowComponent {
     this.carregarAreas();
   }
 
-  // === Áreas ===
+
   carregarAreas() {
     this.areaService.getAreas().subscribe(res => {
       this.todasAreas = res;
@@ -73,7 +73,7 @@ export class CriarUsuarioWorkflowComponent {
     return area ? area.nome : '';
   }
 
-  // === Envio ===
+ 
   onSubmit(): void {
     if (this.form.invalid) return;
 
@@ -82,7 +82,7 @@ export class CriarUsuarioWorkflowComponent {
     this.errorMsg = '';
 
     const payload = {
-      id: 0, // or null, depending on backend expectations
+      id: 0, 
       nome: this.form.value.nome,
       areaId: this.form.value.areaId
     };

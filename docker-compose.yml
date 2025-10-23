@@ -1,3 +1,5 @@
+version: '3.9'
+
 services:
   sqlserver:
     image: mcr.microsoft.com/mssql/server:2022-latest
@@ -9,6 +11,8 @@ services:
       - "1433:1433"
     volumes:
       - sql_data:/var/opt/mssql
+    networks:
+      - appnet
 
   workflowapi:
     build:
@@ -22,6 +26,24 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ConnectionStrings__WorkflowDatabase=Server=sqlserver,1433;Database=WorkflowDb;User Id=sa;Password=MinhaSenha123.;TrustServerCertificate=True
+    networks:
+      - appnet
+
+  workflowfrontend:
+    build:
+      context: ./workflow-frontend
+      dockerfile: Dockerfile
+    container_name: workflow-frontend
+    ports:
+      - "4200:80"
+    depends_on:
+      - workflowapi
+    networks:
+      - appnet
 
 volumes:
   sql_data:
+
+networks:
+  appnet:
+    driver: bridge
