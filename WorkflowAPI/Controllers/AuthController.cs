@@ -35,6 +35,14 @@
             return Ok(usuarios);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> ListarPorId(int id)
+        {
+            var usuarioResponse = await _usuarioService.ListarPorId(id);
+            return Ok(usuarioResponse);
+
+        }
+
         [HttpGet("me")]
         public IActionResult Me()
         {
@@ -43,7 +51,7 @@
 
         [HttpPost("cadastro")]
 
-        public async Task<IActionResult> CadastraUsuario([FromBody] LoginRequest request)
+        public async Task<IActionResult> CadastraUsuario([FromBody] CadastraUsuarioRequest request)
         {
 
             await _usuarioService.CadastraUsuario(request);
@@ -82,10 +90,10 @@
 
         [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
-        public async Task<IActionResult> AtualizaUsuario(int id, [FromBody] LoginUpdateRequest request)
+        public async Task<IActionResult> AtualizaUsuario(int id, [FromBody] CadastraUsuarioRequest request)
         {
             var usuarioAtualizado = await _usuarioService.AtualizaUsuario(id, request);
-            var usuarioResponse = new UsuarioResponse(usuarioAtualizado.Id, usuarioAtualizado.UserName, usuarioAtualizado.UsuarioWorkflowId);
+            var usuarioResponse = new UsuarioResponse(usuarioAtualizado.Id, usuarioAtualizado.UserName,request.email, usuarioAtualizado.UsuarioWorkflowId);
             return Ok(usuarioResponse);
         }
 
@@ -98,8 +106,20 @@
             {
                 return NotFound($"Usuário com ID {id} não encontrado.");
             }
-            await _usuarioService.atualizaSenhaUsuario(User, request.senhaAtual, request.senhaNova);
+            await _usuarioService.atualizaSenhaUsuario(User, request);
             return Ok("Senha atualizada com sucesso!");
+        }
+
+        [HttpPatch("reset-senha/{id}")]
+        public async Task <IActionResult> ResetaSenhaUsuario(int id, [FromBody] SenhaResetRequest request)
+        {
+            var usuario = await _dalUsuario.RecuperarPor(u => u.Id == id);
+            if (usuario == null)
+            {
+                return NotFound($"Usuário com ID {id} não encontrado.");
+            }
+            await _usuarioService.resetaSenhaUsuario(id, request);
+            return Ok("Senha resetada com sucesso!");
         }
 
 
@@ -109,17 +129,15 @@
         {
             var usuario = await _dalUsuario.RecuperarPor(u => u.Id == id);
             
-            if (usuario == null)
+            if (usuario != null)
             {
-                return NotFound($"Usuário com ID {id} não encontrado.");
+                usuario.Ativo = false;
+                await _dalUsuario.Atualizar(usuario);
             }
-            usuario.Ativo = false;
-            await _dalUsuario.Atualizar(usuario);
             await _usuarioService.DeletaUsuario(id);
 
             return NoContent();
         }
 
     }
-
 }

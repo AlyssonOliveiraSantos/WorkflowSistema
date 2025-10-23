@@ -1,0 +1,65 @@
+<div class="form-container">
+  <h2>Criar Usuário</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+
+    <div class="form-group">
+      <label>Username</label>
+      <input type="text" formControlName="username" placeholder="Digite o username" />
+    </div>
+
+
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password" formControlName="password" placeholder="Digite a senha" />
+    </div>
+
+
+    <div class="form-group">
+      <label>Confirm Password</label>
+      <input type="password" formControlName="confirmPassword" placeholder="Confirme a senha" />
+    </div>
+
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" formControlName="email" placeholder="Digite o email" />
+    </div>
+
+
+    <div class="form-group">
+      <label>Workflow:</label>
+      <div style="position: relative;">
+        <input
+          type="text"
+          [value]="getWorkflowNomeEditar()"
+          (input)="buscarUsuariosWorkflow($any($event.target).value)"
+          (click)="showWorkflowDropdownEditar = true"
+          placeholder="Selecione o workflow"
+        />
+        <ul
+          *ngIf="showWorkflowDropdownEditar && usuariosWorkflow.length"
+          class="dropdown"
+          (mouseleave)="showWorkflowDropdownEditar = false"
+        >
+          <li
+            *ngFor="let w of usuariosWorkflow"
+            (click)="selecionarWorkflowEditar(w)"
+          >
+            {{ w.nome }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+ 
+    <p *ngIf="success" class="success-msg">Usuário criado com sucesso!</p>
+    <p *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</p>
+
+
+    <button type="submit" [disabled]="loading">
+      {{ loading ? 'Salvando...' : 'Salvar Usuário' }}
+    </button>
+  </form>
+</div>

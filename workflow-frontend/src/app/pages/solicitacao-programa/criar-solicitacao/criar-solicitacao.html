@@ -1,0 +1,72 @@
+<div class="form-container">
+  <h2>Criar Solicitação</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+
+<div class="form-group">
+  <label>Usuário</label>
+  <input type="text"
+         [value]="getUsuarioNome()"
+         (input)="buscarUsuarios($any($event.target).value)"
+         (click)="showUsuariosDropdown = true"
+         placeholder="Pesquisar usuário">
+  <ul *ngIf="showUsuariosDropdown && usuarios.length" 
+      class="dropdown"
+      (mouseleave)="showUsuariosDropdown = false">
+    <li *ngFor="let u of usuarios" (click)="selecionarUsuario(u)">
+      {{ u.nome }}
+    </li>
+  </ul>
+</div>
+
+
+<div class="form-group">
+  <label>Programa</label>
+  <input type="text"
+         [value]="getProgramaNome()"
+         (input)="buscarProgramas($any($event.target).value)"
+         (click)="showProgramasDropdown = true"
+         placeholder="Pesquisar programa">
+  <ul *ngIf="showProgramasDropdown && programas.length" 
+      class="dropdown"
+      (mouseleave)="showProgramasDropdown = false">
+    <li *ngFor="let p of programas" (click)="selecionarPrograma(p)">
+      {{ p.nome }}
+    </li>
+  </ul>
+</div>
+
+
+
+    <div class="form-group">
+      <label>Observação</label>
+      <textarea formControlName="observacao" placeholder="Digite a justificativa"></textarea>
+    </div>
+
+
+    <div class="form-group permissoes">
+      <label>Permissões</label>
+      <div class="permissoes-box" (click)="showPermissoesDropdown = !showPermissoesDropdown">
+        <span>{{ permissoesTexto || 'Selecione permissões' }}</span>
+      </div>
+      <ul *ngIf="showPermissoesDropdown" class="subtabs">
+        <li *ngFor="let p of permissoesList"
+            [class.selected]="isSelecionado(p.value)"
+            (click)="togglePermissao(p.value); $event.stopPropagation()">
+          {{ p.label }}
+        </li>
+      </ul>
+    </div>
+
+
+    <p *ngIf="success" class="success-msg">Solicitação enviada com sucesso!</p>
+    <p *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</p>
+
+
+    <button type="submit" [disabled]="loading">
+      {{ loading ? 'Enviando...' : 'Enviar Solicitação' }}
+    </button>
+
+  </form>
+</div>

@@ -267,11 +267,14 @@ namespace WorkflowAPI.Controllers
 
         private bool PodeAprovarComoResponsavelPrograma(SolicitacaoAcessoPrograma s, UsuarioWorkflow usuarioAtual)
         {
+            var responsavelArea = s.Programa.Area.ResponsavelAreaId;
+            if(usuarioAtual.Id != responsavelArea)
+            {
+                return false;
+            }
             return s.AprovadoGerente == true &&
-                 
-
-                   s.AprovadoTI == null &&
-                   s.Programa.AreaId == usuarioAtual.AreaId;
+                   s.AprovadoResponsavelPrograma == null &&
+                   s.AprovadoTI == null;
         }
 
         private bool PodeAprovarComoTI(SolicitacaoAcessoPrograma s, UsuarioWorkflow usuarioAtual)

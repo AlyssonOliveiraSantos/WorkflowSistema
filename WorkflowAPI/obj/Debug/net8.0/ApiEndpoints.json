@@ -90,6 +90,22 @@
   },
   {
     "ContainingType": "WorkflowAPI.Controllers.AuthController",
+    "Method": "ListarPorId",
+    "RelativePath": "api/Auth/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AuthController",
     "Method": "AtualizaUsuario",
     "RelativePath": "api/Auth/{id}",
     "HttpMethod": "PUT",
@@ -103,7 +119,7 @@
       },
       {
         "Name": "request",
-        "Type": "WorkflowAPI.Helper.LoginUpdateRequest",
+        "Type": "WorkflowAPI.Helper.CadastraUsuarioRequest",
         "IsRequired": true
       }
     ],
@@ -156,7 +172,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "WorkflowAPI.Helper.LoginRequest",
+        "Type": "WorkflowAPI.Helper.CadastraUsuarioRequest",
         "IsRequired": true
       }
     ],
@@ -199,6 +215,27 @@
       {
         "Name": "request",
         "Type": "WorkflowAPI.Helper.TokenRefreshRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WorkflowAPI.Controllers.AuthController",
+    "Method": "ResetaSenhaUsuario",
+    "RelativePath": "api/Auth/reset-senha/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "WorkflowAPI.Helper.SenhaResetRequest",
         "IsRequired": true
       }
     ],

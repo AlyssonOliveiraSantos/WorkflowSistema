@@ -1,0 +1,85 @@
+<div class="table-container criar-fundo">
+  <h2>Áreas</h2>
+
+  <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Responsável</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let area of areas">
+        <td>{{ area.id }}</td>
+        <td>{{ area.nome }}</td>
+        <td>{{ area.descricao }}</td>
+        <td>{{ area.responsavelAreaNome }}</td>
+        <td>
+          <button class="btn-detalhes" (click)="abrirDetalhes(area)">Detalhes</button>
+          <button class="btn-editar" (click)="abrirEditar(area)">Editar</button>
+          <button class="btn-deletar" (click)="abrirModalDeletar(area)">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="modal" *ngIf="detalheSelecionado">
+  <div class="modal-content">
+    <span class="close" (click)="fecharDetalhes()">&times;</span>
+    <h3>Detalhes da Área</h3>
+    <p><strong>ID:</strong> {{ detalheSelecionado.id }}</p>
+    <p><strong>Nome:</strong> {{ detalheSelecionado.nome }}</p>
+    <p><strong>Descrição:</strong> {{ detalheSelecionado.descricao }}</p>
+    <p><strong>Responsável:</strong> {{ detalheSelecionado.responsavelAreaNome }}</p>
+  </div>
+</div>
+
+
+<div class="modal" *ngIf="editarSelecionado">
+  <div class="modal-content">
+    <span class="close" (click)="fecharEditar()">&times;</span>
+    <h3>Editar Área</h3>
+
+    <label>Nome</label>
+    <input type="text" [(ngModel)]="editarSelecionado.nome">
+
+    <label>Descrição</label>
+    <textarea [(ngModel)]="editarSelecionado.descricao"></textarea>
+
+    <label>Responsável</label>
+    <div class="dropdown-wrapper" style="position: relative;">
+      <input type="text"
+             #inputUsuario
+             [value]="getUsuarioNomeEditar()"
+             (input)="buscarUsuarios($any($event.target).value)"
+             (click)="showUsuariosDropdownEditar = true"
+             placeholder="Pesquisar usuário">
+      <ul *ngIf="showUsuariosDropdownEditar && usuarios.length" class="dropdown">
+        <li *ngFor="let u of usuarios" (click)="selecionarUsuarioEditar(u)">
+          {{ u.nome }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="botoes-confirmar">
+      <button class="btn-salvar" (click)="salvarEdicao()">Salvar</button>
+      <button class="btn-cancelar" (click)="fecharEditar()">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" *ngIf="confirmarExclusao">
+  <div class="modal-content confirmar">
+    <p>Deseja realmente deletar a área <strong>{{ confirmarExclusao.nome }}</strong>?</p>
+    <div class="botoes-confirmar">
+      <button class="btn-cancelar" (click)="cancelarExclusao()">Cancelar</button>
+      <button class="btn-deletar" (click)="confirmarDeletar()">Deletar</button>
+    </div>
+  </div>
+</div>

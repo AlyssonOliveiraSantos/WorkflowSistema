@@ -1,4 +1,3 @@
-// src/app/pages/login/login.ts
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -33,7 +32,6 @@ export class LoginComponent {
         console.log('RefreshToken:', res.refreshToken);
         console.log('Perfil:', this.auth.getPerfil());
 
-        // Redireciona para a página de dashboard
         this.router.navigate(['/dashboard']);
       },
       error: (err: any) => {

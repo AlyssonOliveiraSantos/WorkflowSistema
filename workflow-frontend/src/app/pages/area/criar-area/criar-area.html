@@ -1,0 +1,44 @@
+<div class="form-container">
+  <h2>Criar Área</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <!-- Nome da Área -->
+    <div class="form-group">
+      <label>Nome da Área</label>
+      <input type="text" formControlName="nome" placeholder="Digite o nome da área">
+    </div>
+
+    <!-- Descrição -->
+    <div class="form-group">
+      <label>Descrição</label>
+      <textarea formControlName="descricao" placeholder="Digite a descrição da área"></textarea>
+    </div>
+
+    <!-- Responsável -->
+<div class="form-group">
+  <label>Responsável</label>
+  <input type="text"
+         formControlName="responsavelId" 
+         [value]="getResponsavelNome()"
+         (input)="buscarUsuarios($any($event.target).value)"
+         (click)="showUsuariosDropdown = true"
+         placeholder="Pesquisar usuário">
+  <ul *ngIf="showUsuariosDropdown && usuarios.length" class="dropdown" (mouseleave)="showUsuariosDropdown = false">
+    <li *ngFor="let u of usuarios" (click)="selecionarUsuario(u)">
+      {{ u.nome }}
+    </li>
+  </ul>
+</div>
+
+    <!-- Mensagens -->
+    <p *ngIf="success" class="success-msg">Área criada com sucesso!</p>
+    <p *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</p>
+
+    <!-- Botão salvar -->
+    <button type="submit" [disabled]="loading">
+      {{ loading ? 'Salvando...' : 'Salvar Área' }}
+    </button>
+
+  </form>
+</div>

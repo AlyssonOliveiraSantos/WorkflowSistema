@@ -1,17 +1,9 @@
-.dashboard-root {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background: url('/assets/login.jpg') no-repeat center center;
-  background-size: cover;
-}
-
 .topbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0,0,0,0.85);
-  color: white;
+  background: #2c2c2c; // cinza escuro sólido
+  color: #eee; // texto claro
   padding: 0 20px;
   height: 60px;
 
@@ -25,26 +17,27 @@
       padding: 10px;
 
       &:hover {
-        background: #444;
+        background: #444; // hover um pouco mais claro
         border-radius: 5px;
       }
 
-.subtabs {
-  display: none;
-  position: absolute;
-  top: calc(100% + 8.8px);
-  left: 0;
-  background: rgba(0,0,0,0.9);
-  border-radius: 5px;
-  min-width: 180px;
-  z-index: 1000;
-  box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+      .subtabs {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #2c2c2c; // mesmo cinza sólido da barra
+        border-radius: 5px;
+        min-width: 180px;
+        z-index: 1000;
+        box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+
         .subtab {
           padding: 8px 15px;
           white-space: nowrap;
 
           &:hover {
-            background: rgba(255,255,255,0.1);
+            background: #444; // hover consistente
           }
         }
       }

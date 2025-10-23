@@ -28,16 +28,30 @@ namespace WorkflowAPI.Services
             _dalUsuarioWorkflow = dalUsuarioWorkflow;
         }
 
-        public async Task CadastraUsuario(LoginRequest loginRequest)
+        public async Task CadastraUsuario(CadastraUsuarioRequest cadastraUsuarioRequest)
         {
+            if (cadastraUsuarioRequest.password != cadastraUsuarioRequest.confirmpassword)
+            {
+                throw new ApplicationException("As senhas não coincidem.");
+            }
+            if (cadastraUsuarioRequest.usuarioWorkflowId <= 0)
+            {
+                throw new ApplicationException("Usuário Workflow inválido.");
+            }
             var usuario = new PessoaComAcesso
             {
-                UserName = loginRequest.Username,
-                NormalizedUserName = loginRequest.Username.ToUpper(),
-                UsuarioWorkflowId = null,
+                UserName = cadastraUsuarioRequest.username,
+                NormalizedUserName = cadastraUsuarioRequest.username.ToUpper(),
+                Email = cadastraUsuarioRequest.email,
+                NormalizedEmail = cadastraUsuarioRequest.email.ToUpper(),
+                UsuarioWorkflowId = cadastraUsuarioRequest.usuarioWorkflowId
             };
+            if (!usuario.UsuarioWorkflowId.HasValue)
+            {
+                usuario.UsuarioWorkflowId = null;
+            }
 
-            IdentityResult resultado = await _userManager.CreateAsync(usuario, loginRequest.Password);
+            IdentityResult resultado = await _userManager.CreateAsync(usuario, cadastraUsuarioRequest.password);
             await _userManager.AddToRoleAsync(usuario, PerfilEnum.Padrao.ToString());
 
             if (!resultado.Succeeded)
@@ -48,15 +62,20 @@ namespace WorkflowAPI.Services
 
         }
 
-        public async Task atualizaSenhaUsuario(ClaimsPrincipal user,string senhaAtual, string senhaNova)
+        public async Task atualizaSenhaUsuario(ClaimsPrincipal user, SenhaUpdateRequest request)
         {
             var usuario =  user.FindFirst("idsub");
             if (usuario == null)
                 throw new ApplicationException("Usuário não encontrado.");
             if (!int.TryParse(usuario.Value, out var pessoaId))
                 throw new ApplicationException("Usuário não encontrado.");
+            if (request.senhaNova != request.confimaNovaSenha)
+                throw new ApplicationException("A nova senha e a confirmação da nova senha não coincidem.");
+
             var pessoa = await _dal.RecuperarPor(p => p.Id == pessoaId);
-            var resultado = await _userManager.ChangePasswordAsync(pessoa, senhaAtual, senhaNova);
+            if (pessoa == null)
+                throw new ApplicationException("Usuário não encontrado.");
+            var resultado = await _userManager.ChangePasswordAsync(pessoa, request.senhaAtual, request.senhaNova);
             if (!resultado.Succeeded)
             {
                 var erros = string.Join("; ", resultado.Errors.Select(e => e.Description));
@@ -67,11 +86,17 @@ namespace WorkflowAPI.Services
 
         public async Task<IEnumerable<UsuarioResponse>> ListarUsuarios()
         {
-            var usuarios = await _dal.ListarTodos();
-            return usuarios.Select(u => new UsuarioResponse(u.Id, u.UserName, u.UsuarioWorkflowId));
+            var usuarios = await _dal.ListarPor(a => a.Ativo == true);
+            return usuarios.Select(u => new UsuarioResponse(u.Id, u.UserName,u.Email, u.UsuarioWorkflowId));
         }
 
-        public async Task<PessoaComAcesso> AtualizaUsuario(int id, LoginUpdateRequest request)
+        public async Task<UsuarioResponse> ListarPorId(int id)
+        {
+            var usuario = await _dal.ListarPor(u => u.Id == id);
+            return usuario.Select(u => new UsuarioResponse(u.Id, u.UserName, u.Email, u.UsuarioWorkflowId)).FirstOrDefault();
+        }
+
+        public async Task<PessoaComAcesso> AtualizaUsuario(int id, CadastraUsuarioRequest request)
         {
             var usuario = await _dal.RecuperarPor(u => u.Id == id);
             if (usuario == null)
@@ -85,8 +110,21 @@ namespace WorkflowAPI.Services
 
                 usuario.UsuarioWorkflowId = request.usuarioWorkflowId.Value;
             }
-
-            usuario.Ativo = request.ativo ?? usuario.Ativo;
+            if(request.password != null && request.password == request.confirmpassword)
+            {
+                var token = await _userManager.GeneratePasswordResetTokenAsync(usuario);
+                var resultado = await _userManager.ResetPasswordAsync(usuario, token, request.password);
+                if (!resultado.Succeeded)
+                {
+                    var erros = string.Join("; ", resultado.Errors.Select(e => e.Description));
+                    throw new ApplicationException($"Falha ao atualizar a senha: {erros}");
+                }
+            }
+            if (!usuario.UsuarioWorkflowId.HasValue)
+            {
+                usuario.UsuarioWorkflowId = null;
+            }
+            usuario.Email = request.email ?? usuario.Email;
             await _dal.Atualizar(usuario);
             return usuario;
         }
@@ -148,5 +186,24 @@ namespace WorkflowAPI.Services
             usuario.Ativo = false;
             await _dal.Atualizar(usuario);
         }
+
+        internal async Task resetaSenhaUsuario(int id, SenhaResetRequest request)
+        {
+            var usuario = await _dal.RecuperarPor(u => u.Id == id);
+            if (usuario == null)
+            {
+                throw new ApplicationException($"Usuário com ID {id} não encontrado.");
+            }
+            if (request.novaSenha != request.confirmaNovaSenha)
+                throw new ApplicationException("A nova senha e a confirmação da nova senha não coincidem.");
+            var token = await _userManager.ResetPasswordAsync(usuario, await _userManager.GeneratePasswordResetTokenAsync(usuario), request.novaSenha);
+            if (!token.Succeeded)
+            {
+                var erros = string.Join("; ", token.Errors.Select(e => e.Description));
+                throw new ApplicationException($"Falha ao resetar a senha: {erros}");
+            }
+        }
+
+
     }
 }

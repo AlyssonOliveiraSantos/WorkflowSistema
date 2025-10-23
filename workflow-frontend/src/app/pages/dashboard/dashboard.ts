@@ -17,11 +17,11 @@ interface Tab {
 })
 export class DashboardComponent {
   tabs: Tab[] = [
-    { label: 'Usuarios Workflow', subTabs: ['Adicionar Novo', 'Alterar', 'Vincular Area', 'Deletar'] },
-    { label: 'Solicitações', subTabs: ['Criar Nova', 'Minhas Solicitações', 'Pendentes Aprovação', 'Todas Solicitações'] },
-    { label: 'Áreas', subTabs: ['Criar Nova Area','Alterar Area','Cadastrar Responsavel', 'Deletar Area'] },
-    { label: 'Programas', subTabs: ['Criar Novo Programa', 'Alterar Programa', 'Adicionar Area', 'Deletar Programa'] },
-    { label: 'Usuários', subTabs: ['Adicionar Novo', 'Alterar Existente', 'Vincular', 'Alterar Permissoes', 'Deletar Usuario'] }
+    { label: 'Usuarios Workflow', subTabs: ['Criar Novo Usuario Workflow', 'Listar Todos UsuariosWorkflow'] },
+    { label: 'Solicitações', subTabs: ['Criar Nova', 'Pendentes Aprovação', 'Todas Solicitações'] },
+    { label: 'Áreas', subTabs: ['Criar Nova Area','Listar Todas'] },
+    { label: 'Programas', subTabs: ['Criar Novo Programa', 'Listar Todos Programas'] },
+    { label: 'Usuários', subTabs: ['Criar Novo Usuario', 'Listar Todos Usuarios'] }
   ];
 
   constructor(public auth: AuthService, private router: Router) {}
@@ -35,24 +35,45 @@ export class DashboardComponent {
     return this.auth.getUsername();
   }
 
-  // Função para mapear cada subtab para a rota correta
-  navigateTo(subLabel: string) {
-    switch(subLabel) {
-      case 'Todas Solicitações':
-        this.router.navigate(['/dashboard/todas-solicitacoes']);
-        break;
-      case 'Criar Nova':
-        this.router.navigate(['/dashboard/criar-nova']);
-        break;
-      case 'Minhas Solicitações':
-        this.router.navigate(['/dashboard/minhas-solicitacoes']);
-        break;
-      case 'Pendentes Aprovação':
-        this.router.navigate(['/dashboard/pendentes-aprovacao']);
-        break;
-      // mapeie outras subtabs aqui...
-      default:
-        console.warn('Rota não definida para:', subLabel);
-    }
+navigateTo(subLabel: string) {
+  switch(subLabel) {
+    case 'Todas Solicitações':
+      this.router.navigate(['/dashboard/todas-solicitacoes']);
+      break;
+    case 'Criar Nova':
+      this.router.navigate(['/dashboard/criar-nova']);
+      break;
+    case 'Pendentes Aprovação':
+      this.router.navigate(['/dashboard/pendentes-aprovacao']);
+      break;
+    case 'Listar Todas':         // Áreas
+      this.router.navigate(['/dashboard/areas']);
+      break;
+    case 'Criar Nova Area':
+      this.router.navigate(['/dashboard/criar-areas']);
+      break;
+    case 'Listar Todos Programas':
+      this.router.navigate(['/dashboard/programas']);
+      break;
+      case 'Criar Novo Programa':
+      this.router.navigate(['/dashboard/criar-programa']);
+      break;
+      case 'Criar Novo Usuario Workflow':
+      this.router.navigate(['/dashboard/criar-usuario-workflow']);
+      break;
+      case 'Listar Todos UsuariosWorkflow':
+      this.router.navigate(['/dashboard/usuario-workflow']);
+      break;
+      case 'Criar Novo Usuario':
+      this.router.navigate(['/dashboard/criar-usuario']);
+      break;
+      case 'Listar Todos Usuarios':
+      this.router.navigate(['/dashboard/usuario']);
+      break;
+    default:
+      console.warn('Rota não definida para:', subLabel);
+  }
+
+    
   }
 }

@@ -8,7 +8,7 @@ export interface SolicitacaoAcessoPrograma {
   programaNome?: string;
   permissao: string;
   finalizado: boolean;
-  dataSolicitacao?: string; // <-- adiciona essa linha
+  dataSolicitacao?: string; 
   observacaoSolicitante?: string;
   aprovadoGerente?: boolean;
   observacaoGerente?: string;

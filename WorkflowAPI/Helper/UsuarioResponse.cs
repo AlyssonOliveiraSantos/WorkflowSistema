@@ -1,4 +1,4 @@
 ﻿namespace WorkflowAPI.Helper
 {
-    public record UsuarioResponse(int Id, string UserName, int? UsuarioWorkflowId = null);
+    public record UsuarioResponse(int Id, string UserName, string? email, int? UsuarioWorkflowId = null);
 }

@@ -1,0 +1,91 @@
+<div class="table-container criar-fundo">
+  <h2>Usuários</h2>
+
+  <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Usuário Workflow</th>
+        <th>Email</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.userName }}</td>
+        <td>{{ usuario.usuarioWorkflowNome }}</td>
+        <td>{{ usuario.email }}</td>
+        <td>
+          <button class="btn-detalhes" (click)="abrirDetalhes(usuario)">Detalhes</button>
+          <button class="btn-editar" (click)="abrirEditar(usuario)">Editar</button>
+          <button class="btn-deletar" (click)="abrirModalDeletar(usuario)">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Modal Detalhes -->
+<div class="modal" *ngIf="detalheSelecionado">
+  <div class="modal-content">
+    <span class="close" (click)="fecharDetalhes()">&times;</span>
+    <h3>Detalhes do Usuário</h3>
+    <p><strong>ID:</strong> {{ detalheSelecionado.id }}</p>
+    <p><strong>Nome:</strong> {{ detalheSelecionado.userName }}</p>
+    <p><strong>Email:</strong> {{ detalheSelecionado.email }}</p>
+    <p><strong>Workflow:</strong> {{ detalheSelecionado.usuarioWorkflowNome }}</p>
+  </div>
+</div>
+
+<!-- Modal Editar -->
+<div class="modal" *ngIf="editarSelecionado">
+  <div class="modal-content">
+    <span class="close" (click)="fecharEditar()">&times;</span>
+    <h3>Editar Usuário</h3>
+
+    <label>Nome</label>
+    <input type="text" [(ngModel)]="editarSelecionado.userName">
+
+    <label>Email</label>
+    <input type="text" [(ngModel)]="editarSelecionado.email">
+
+    <label>Senha</label>
+    <input type="password" [(ngModel)]="editarSelecionado.password">
+
+    <label>Confirmar Senha</label>
+    <input type="password" [(ngModel)]="editarSelecionado.confirmpassword">
+
+    <label>Workflow</label>
+    <div class="dropdown-wrapper" style="position: relative;">
+      <input type="text"
+             #inputWorkflow
+             [value]="getWorkflowNomeEditar()"
+             (input)="buscarUsuariosWorkflow($any($event.target).value)"
+             (click)="showWorkflowDropdownEditar = true"
+             placeholder="Pesquisar workflow">
+      <ul *ngIf="showWorkflowDropdownEditar && usuariosWorkflow.length" class="dropdown">
+        <li *ngFor="let w of usuariosWorkflow" (click)="selecionarWorkflowEditar(w)">
+          {{ w.nome }}
+        </li>
+      </ul>
+    </div>
+    
+    <div class="botoes-confirmar">
+      <button class="btn-salvar" (click)="salvarEdicao()">Salvar</button>
+      <button class="btn-cancelar" (click)="fecharEditar()">Cancelar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Deletar -->
+<div class="modal" *ngIf="confirmarExclusao">
+  <div class="modal-content confirmar">
+    <p>Deseja realmente deletar o usuário <strong>{{ confirmarExclusao.userName }}</strong>?</p>
+    <div class="botoes-confirmar">
+      <button class="btn-cancelar" (click)="cancelarExclusao()">Cancelar</button>
+      <button class="btn-deletar" (click)="confirmarDeletar()">Deletar</button>
+    </div>
+  </div>
+</div>

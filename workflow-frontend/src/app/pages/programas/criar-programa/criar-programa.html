@@ -1,0 +1,37 @@
+<div class="form-container">
+  <h2>Criar Programa</h2>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <!-- Nome do Programa -->
+    <div class="form-group">
+      <label>Nome do Programa</label>
+      <input type="text" formControlName="nome" placeholder="Digite o nome do programa" />
+    </div>
+
+    <!-- Área -->
+    <div class="form-group">
+      <label>Área</label>
+      <input type="text"
+             [value]="getAreaNome()"
+             (input)="buscarAreas($any($event.target).value)"
+             (click)="showAreasDropdown = true"
+             placeholder="Pesquisar área" />
+      <ul *ngIf="showAreasDropdown && areas.length" class="dropdown" (mouseleave)="showAreasDropdown = false">
+        <li *ngFor="let a of areas" (click)="selecionarArea(a)">
+          {{ a.nome }}
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mensagens -->
+    <p *ngIf="success" class="success-msg">Programa criado com sucesso!</p>
+    <p *ngIf="errorMsg" class="error-msg">{{ errorMsg }}</p>
+
+    <!-- Botão salvar -->
+    <button type="submit" [disabled]="loading">
+      {{ loading ? 'Salvando...' : 'Salvar Programa' }}
+    </button>
+
+  </form>
+</div>

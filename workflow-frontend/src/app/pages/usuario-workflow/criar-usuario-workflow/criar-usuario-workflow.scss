@@ -1,0 +1,95 @@
+@use "sass:color";
+
+$form-bg: #1f1f1f;
+$input-bg: #2b2b2b;
+$text-color: #eee;
+$highlight: #4caf50;
+
+.form-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: $form-bg;
+  border-radius: 10px;
+  color: $text-color;
+  font-family: Arial, sans-serif;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 1.8rem;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px 16px;
+      background: $input-bg;
+      border: none;
+      border-radius: 8px;
+      color: $text-color;
+      font-size: 15px;
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: $input-bg;
+      border-radius: 8px;
+      margin-top: 2px;
+      list-style: none;
+      padding: 0;
+      max-height: 200px;
+      overflow-y: auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 10;
+
+      li {
+        padding: 10px 16px;
+        cursor: pointer;
+        font-size: 15px;
+
+        &:hover {
+          background: color.adjust($input-bg, $lightness: -5%);
+        }
+      }
+    }
+  }
+
+  .success-msg {
+    color: $highlight;
+    margin-bottom: 1rem;
+  }
+
+  .error-msg {
+    color: #f44336;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    background: $highlight;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:disabled {
+      background: color.adjust($highlight, $lightness: 20%);
+      cursor: not-allowed;
+    }
+  }
+}

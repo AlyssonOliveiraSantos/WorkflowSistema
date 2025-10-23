@@ -1,5 +1,5 @@
 // src/app/auth.guard.ts
-import { inject, Injectable } from '@angular/core';
+import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { AuthService } from './auth.service';
 
@@ -7,22 +7,28 @@ export const authGuard: CanActivateFn = () => {
   const auth = inject(AuthService);
   const router = inject(Router);
 
-  if (!auth.isAuthenticated()) {
-    router.navigate(['/login']);
+  const isAuth = auth.isAuthenticated();
+  console.log('[AuthGuard] isAuthenticated:', isAuth);
+
+  if (!isAuth) {
+    router.navigateByUrl('/login', { replaceUrl: true });
     return false;
   }
 
   return true;
 };
 
-// Guard com perfil específico
 export const roleGuard = (role: string): CanActivateFn => {
   return () => {
     const auth = inject(AuthService);
     const router = inject(Router);
 
-    if (!auth.isAuthenticated() || !auth.hasRole(role)) {
-      router.navigate(['/login']);
+    const isAuth = auth.isAuthenticated();
+    const hasRole = auth.hasRole(role);
+    console.log(`[RoleGuard] isAuthenticated: ${isAuth}, hasRole(${role}): ${hasRole}`);
+
+    if (!isAuth || !hasRole) {
+      router.navigateByUrl('/login', { replaceUrl: true });
       return false;
     }
 

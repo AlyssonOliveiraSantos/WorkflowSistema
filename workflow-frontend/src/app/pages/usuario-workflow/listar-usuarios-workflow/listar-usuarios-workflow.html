@@ -1,0 +1,71 @@
+<div class="table-container criar-fundo">
+  <h2>Usuários Workflow</h2>
+
+  <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Área</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.nome }}</td>
+        <td>{{ usuario.areaNome }}</td>
+<td>
+  <button class="btn-detalhes" (click)="abrirDetalhes(usuario)">Detalhes</button>
+  <button class="btn-editar" (click)="abrirEditar(usuario)">Editar</button>
+  <button class="btn-deletar" (click)="abrirModalDeletar(usuario)">Deletar</button>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="modal" *ngIf="detalheSelecionado">
+  <div class="modal-content">
+    <span class="close" (click)="fecharDetalhes()">&times;</span>
+    <h3>Detalhes do Usuário</h3>
+    <p><strong>ID:</strong> {{ detalheSelecionado.id }}</p>
+    <p><strong>Nome:</strong> {{ detalheSelecionado.nome }}</p>
+    <p><strong>Área:</strong> {{ detalheSelecionado.areaNome }}</p>
+  </div>
+</div>
+
+
+
+<div class="modal" *ngIf="editarSelecionado">
+  <div class="modal-content">
+    <h3>Editar Usuário</h3>
+    <label>Nome:</label>
+    <input type="text" [(ngModel)]="editarSelecionado.nome">
+
+    <label>Área:</label>
+    <input type="text" #inputArea [value]="getAreaNomeEditar()" 
+           (input)="buscarAreas($any($event.target).value)" 
+           (click)="showAreasDropdownEditar = true">
+    <ul *ngIf="showAreasDropdownEditar && areas.length" class="dropdown" (mouseleave)="showAreasDropdownEditar = false">
+      <li *ngFor="let a of areas" (click)="selecionarAreaEditar(a)">{{ a.nome }}</li>
+    </ul>
+
+<div class="botoes-confirmar">
+  <button class="btn-salvar" (click)="salvarEdicao()">Salvar</button>
+  <button class="btn-cancelar" (click)="fecharEditar()">Cancelar</button>
+</div>
+  </div>
+</div>
+
+
+<div class="modal" *ngIf="confirmarExclusao">
+  <div class="modal-content confirmar">
+    <p>Deseja realmente deletar o programa <strong>{{ confirmarExclusao.nome }}</strong>?</p>
+    <div class="botoes-confirmar">
+      <button class="btn-cancelar" (click)="cancelarExclusao()">Cancelar</button>
+      <button class="btn-deletar" (click)="confirmarDeletar()">Deletar</button>
+    </div>
+  </div>
+</div>

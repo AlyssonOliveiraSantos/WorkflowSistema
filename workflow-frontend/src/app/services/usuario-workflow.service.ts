@@ -15,6 +15,12 @@ export class UsuarioWorkflowService {
     const token = this.authService.getToken();
     return { headers: new HttpHeaders({ 'Authorization': `Bearer ${token}` }) };
   }
+  
+  getUsuarios(query: string = ''): Observable<{id: number, nome: string}[]> {
+  const token = this.authService.getToken();
+  const headers = new HttpHeaders({ 'Authorization': `Bearer ${token}` });
+  return this.http.get<{id: number, nome: string}[]>(`${this.baseUrl}?nome=${query}`, { headers });
+}
 
  getUsuario(id: number): Observable<{ nome: string }> {
     const token = this.authService.getToken();
@@ -35,4 +41,6 @@ export class UsuarioWorkflowService {
   deletarUsuario(id: number): Observable<any> {
     return this.http.delete(`${this.baseUrl}/${id}`, this.getHeaders());
   }
+
+
 }
