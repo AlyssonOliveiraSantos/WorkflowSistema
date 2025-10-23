@@ -7,18 +7,7 @@ import { ReplaySubject, Subject, takeUntil } from 'rxjs';
 import { Usuario } from '../../../models/Usuario';
 import { UsuarioWorkflow } from '../../../models/UsuarioWorkflow';
 import { UsuarioService } from '../../../services/usuario.service';
-import { UsuarioWorkflowService } from '../../../services/usuario-workflow.service';
-
-interface UsuarioEditar {
-  id: number;
-  userName?: string;
-  password?: string;
-  confirmpassword?: string;
-  email?: string;
-  usuarioWorkflowId?: number;
-  ativo?: boolean;
-  usuarioWorkflowNome?: string;
-}
+import { UsuarioWorkflowService } from '../../../services/usuario-workflow.service'; 
 
 @Component({
   selector: 'app-listar-usuarios',

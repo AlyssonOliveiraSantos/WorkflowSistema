@@ -23,7 +23,6 @@ export class ProgramaService {
     return { headers: new HttpHeaders({ 'Authorization': `Bearer ${token}` }) };
   }
 
-  // Retorna programas com áreaNome já mapeado
   getProgramas(query: string = ''): Observable<Programa[]> {
     return forkJoin({
       programas: this.http.get<Programa[]>(`${this.baseUrl}?nome=${query}`, this.getHeaders()),

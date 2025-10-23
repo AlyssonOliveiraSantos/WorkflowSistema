@@ -7,6 +7,7 @@
         <th>ID</th>
         <th>Nome</th>
         <th>Área</th>
+        <th>Ativo</th>
         <th>Ações</th>
       </tr>
     </thead>
@@ -15,6 +16,7 @@
         <td>{{ usuario.id }}</td>
         <td>{{ usuario.nome }}</td>
         <td>{{ usuario.areaNome }}</td>
+        <td>{{usuario.ativo ? 'Sim' : 'Não'}}</td>
 <td>
   <button class="btn-detalhes" (click)="abrirDetalhes(usuario)">Detalhes</button>
   <button class="btn-editar" (click)="abrirEditar(usuario)">Editar</button>
@@ -51,6 +53,15 @@
     <ul *ngIf="showAreasDropdownEditar && areas.length" class="dropdown" (mouseleave)="showAreasDropdownEditar = false">
       <li *ngFor="let a of areas" (click)="selecionarAreaEditar(a)">{{ a.nome }}</li>
     </ul>
+
+<label>Ativo:</label>
+<div class="dropdown-wrapper" (click)="showAtivoDropdown = !showAtivoDropdown">
+  <input type="text" [value]="editarSelecionado.ativo ? 'Sim' : 'Não'" readonly>
+  <ul *ngIf="showAtivoDropdown" class="dropdown" (mouseleave)="showAtivoDropdown = false">
+    <li (click)="selecionarAtivo(true)">Sim</li>
+    <li (click)="selecionarAtivo(false)">Não</li>
+  </ul>
+</div>
 
 <div class="botoes-confirmar">
   <button class="btn-salvar" (click)="salvarEdicao()">Salvar</button>

@@ -189,4 +189,12 @@ export class ListarUsuariosWorkflowComponent implements OnInit, OnDestroy {
   onWindowResize() {
     if (this.inputArea) this.inputAreaWidth = this.inputArea.nativeElement.offsetWidth;
   }
+  
+  showAtivoDropdown = false;
+
+selecionarAtivo(valor: boolean) {
+  if (!this.editarSelecionado) return;
+  this.editarSelecionado.ativo = valor;
+  this.showAtivoDropdown = false;
+}
 }

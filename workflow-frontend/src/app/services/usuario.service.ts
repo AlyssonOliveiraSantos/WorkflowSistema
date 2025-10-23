@@ -40,7 +40,7 @@ criarUsuario(dados: { username: string; password: string, confirmPassword: strin
     dados,
     {
       headers,
-      responseType: 'text' as 'json' // força o Angular aceitar texto
+      responseType: 'text' as 'json' 
     }
   );
 }
@@ -57,7 +57,7 @@ deletarUsuario(id: number): Observable<string> {
 
   return this.http.delete(`http://localhost:5000/api/Auth/${id}`, { 
     headers,
-    responseType: 'text'  // importante para aceitar texto ao invés de JSON
+    responseType: 'text'  
   });
 }
 }

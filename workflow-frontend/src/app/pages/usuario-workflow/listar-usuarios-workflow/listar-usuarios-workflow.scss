@@ -1,4 +1,4 @@
-/* Container geral */
+
 .criar-fundo {
   background-color: #2c2c2c;
   padding: 20px;
@@ -8,7 +8,6 @@
   color: #ffffff;
 }
 
-/* Tabela DataTable */
 table.dataTable {
   width: 100% !important;
   border-collapse: collapse;
@@ -30,7 +29,7 @@ table.dataTable {
   }
 }
 
-/* Botões */
+
 .btn-detalhes, .btn-editar, .btn-aprovar, .btn-recusar, .btn-salvar, .btn-cancelar, .btn-deletar {
   border: none;
   border-radius: 6px;
@@ -41,7 +40,7 @@ table.dataTable {
   color: #fff;
 }
 
-/* Cores individuais */
+
 .btn-detalhes { background-color: #4CAF50; }
 .btn-detalhes:hover { background-color: #45a049; }
 
@@ -63,7 +62,7 @@ table.dataTable {
 .btn-deletar { background-color: #d32f2f; }
 .btn-deletar:hover { background-color: #b71c1c; }
 
-/* Distância lateral entre botões de ação na tabela */
+
 td .btn-detalhes,
 td .btn-editar,
 td .btn-deletar {
@@ -74,7 +73,7 @@ td .btn-deletar:last-child {
   margin-right: 0;
 }
 
-/* Modal */
+
 .modal {
   display: block;
   position: fixed;
@@ -110,7 +109,7 @@ td .btn-deletar:last-child {
   cursor: pointer;
 }
 
-/* Inputs e textarea */
+
 .modal input, .modal textarea {
   width: 100%;
   background-color: #383838;
@@ -126,7 +125,7 @@ td .btn-deletar:last-child {
   resize: vertical; 
 }
 
-/* Botão de salvar do modal */
+
 .modal button[type="submit"] {
   margin-top: 10px;
   padding: 8px 16px;
@@ -142,12 +141,11 @@ td .btn-deletar:last-child {
   background-color: #45a049; 
 }
 
-/* Dropdown */
 .dropdown {
   list-style: none;
   padding: 0;
   margin: 0;
-  position: absolute;
+  position: relative;
   top: 100%;
   left: 0;
   background-color: #383838;
@@ -168,7 +166,7 @@ td .btn-deletar:last-child {
   background-color: #505050; 
 }
 
-/* Botões de confirmação */
+
 .botoes-confirmar {
   display: flex;
   justify-content: space-between;

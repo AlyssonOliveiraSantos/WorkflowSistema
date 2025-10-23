@@ -16,19 +16,13 @@ export class UsuarioWorkflowService {
     return { headers: new HttpHeaders({ 'Authorization': `Bearer ${token}` }) };
   }
   
-  getUsuarios(query: string = ''): Observable<{id: number, nome: string}[]> {
-  const token = this.authService.getToken();
-  const headers = new HttpHeaders({ 'Authorization': `Bearer ${token}` });
-  return this.http.get<{id: number, nome: string}[]>(`${this.baseUrl}?nome=${query}`, { headers });
-}
-
- getUsuario(id: number): Observable<{ nome: string }> {
-    const token = this.authService.getToken();
-    const headers = new HttpHeaders({ 'Authorization': `Bearer ${token}` });
-
-    return this.http.get<{ nome: string }>(`${this.baseUrl}?id=${id}`, { headers });
+ getUsuarios(query: string = ''): Observable<UsuarioWorkflow[]> {
+    return this.http.get<UsuarioWorkflow[]>(`${this.baseUrl}?nome=${query}`, this.getHeaders());
   }
 
+  getUsuario(id: number): Observable<UsuarioWorkflow> {
+    return this.http.get<UsuarioWorkflow>(`${this.baseUrl}/${id}`, this.getHeaders());
+  }
 
   criarUsuario(usuario: UsuarioWorkflow): Observable<UsuarioWorkflow> {
     return this.http.post<UsuarioWorkflow>(this.baseUrl, usuario, this.getHeaders());
@@ -41,6 +35,7 @@ export class UsuarioWorkflowService {
   deletarUsuario(id: number): Observable<any> {
     return this.http.delete(`${this.baseUrl}/${id}`, this.getHeaders());
   }
-
-
 }
+
+
+

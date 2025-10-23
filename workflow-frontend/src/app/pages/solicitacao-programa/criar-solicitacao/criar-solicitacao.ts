@@ -69,8 +69,9 @@ export class CriarSolicitacaoComponent {
 
   carregarUsuarios() {
     this.usuarioService.getUsuarios('').subscribe(res => {
-      this.todosUsuarios = res;
-      this.usuarios = res.slice(0, 5);
+      const ativos = res.filter(u => u.ativo == true)
+      this.todosUsuarios = ativos;
+      this.usuarios = ativos.slice(0, 5);
     });
   }
 

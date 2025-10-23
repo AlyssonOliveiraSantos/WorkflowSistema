@@ -3,4 +3,5 @@ export interface UsuarioWorkflow {
   nome: string;
   areaId?: number;
   areaNome?: string;
+  ativo?: boolean;
 }

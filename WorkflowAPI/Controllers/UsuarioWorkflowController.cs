@@ -22,7 +22,7 @@ public class UsuarioWorkflowController : ControllerBase
     public async Task<IActionResult> ListaTodos()
     {
         var usuarios = await _dal.ListarTodos();
-        var response = usuarios.Select(u => new UsuarioWorkflowResponse(u.Id, u.Nome, u.AreaId));
+        var response = usuarios.Select(u => new UsuarioWorkflowResponse(u.Id, u.Nome, u.AreaId, u.Ativo));
 
         return Ok(response);
     }
@@ -33,7 +33,7 @@ public class UsuarioWorkflowController : ControllerBase
         var usuario = await _dal.ListarPor(u => u.Id == id);
         var usuarioAtivo = usuario.Where(u => u.Ativo);
 
-        var usuarioResponse = usuarioAtivo.Select(u => new UsuarioWorkflowResponse(u.Id, u.Nome, u.AreaId));
+        var usuarioResponse = usuarioAtivo.Select(u => new UsuarioWorkflowResponse(u.Id, u.Nome, u.AreaId, u.Ativo));
         return Ok(usuarioResponse);
     }
 
