@@ -26,14 +26,13 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod());
 });
 
-// Add services to the container.
+
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options => options.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
-builder.Services.AddDbContext<WorkflowDbContext>(options =>
+builder.Services.AddDbContext<WorkflowDbContext>(options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("WorkflowDatabase"))
            .UseLazyLoadingProxies());
 
@@ -62,7 +61,6 @@ builder.Services.AddSwaggerGen(c =>
     c.SchemaFilter<EnumWithValuesSchemaFilter>();
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "Minha API", Version = "v1" });
 
-    // Configuração para JWT Bearer
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
         Name = "Authorization",
@@ -116,11 +114,23 @@ app.UseCors("AllowAngular");
 
 using (var scope = app.Services.CreateScope())
 {
-    var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<PerfilDeAcesso>>();
-    await RoleSeeder.SeedRoles(roleManager);
+    var db = scope.ServiceProvider.GetRequiredService<WorkflowDbContext>();
+    db.Database.Migrate();
+
+    {
+        var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<PerfilDeAcesso>>();
+        await RoleSeeder.SeedRoles(roleManager);
+
+        var usuarioService = scope.ServiceProvider.GetRequiredService<UsuarioService>();
+        await usuarioService.CriaUsuarioInicial(
+            "Admin",
+            "admin@teste.com",
+            "Admin123#!"
+        );
+
+    }
 }
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

@@ -11,13 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("3db1cea6-32c3-408e-99bd-1d24ff3cf3d8")]
-[assembly: System.Reflection.AssemblyCompanyAttribute("WorkflowAPI")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Workflow.Test.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5193b3f69e0fa98916e2baa119f4d61648ba476e")]
-[assembly: System.Reflection.AssemblyProductAttribute("WorkflowAPI")]
-[assembly: System.Reflection.AssemblyTitleAttribute("WorkflowAPI")]
+[assembly: System.Reflection.AssemblyProductAttribute("Workflow.Test.API")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Workflow.Test.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

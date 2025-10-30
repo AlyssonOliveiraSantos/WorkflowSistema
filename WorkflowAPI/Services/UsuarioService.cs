@@ -62,6 +62,23 @@ namespace WorkflowAPI.Services
 
         }
 
+        public async Task CriaUsuarioInicial(string username, string email, string senha)
+        {
+            var usuarioExistente = await _userManager.FindByNameAsync(username);
+            if (usuarioExistente != null)
+                return;
+
+            var request = new CadastraUsuarioRequest(
+                username: username,
+                password: senha,
+                confirmpassword: senha,
+                email: email,
+                usuarioWorkflowId: null
+            );
+
+            await CadastraUsuario(request);
+        }
+
         public async Task atualizaSenhaUsuario(ClaimsPrincipal user, SenhaUpdateRequest request)
         {
             var usuario =  user.FindFirst("idsub");

@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Workflow.Shared.Data.Modelos;
 
 #nullable disable
 
@@ -21,7 +23,6 @@ namespace Workflow.Shared.Data.Migrations
                 nullable: false,
                 defaultValue: 0);
         }
-
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {

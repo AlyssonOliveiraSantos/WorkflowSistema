@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Shared.Data", "Wor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Shared.Modelos", "Workflow.Shared.Models\Workflow.Shared.Modelos.csproj", "{DD303BB2-1447-481E-A173-CD5ED225B7C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow.Test.API", "Workflow.Test.API\Workflow.Test.API.csproj", "{D6A4A964-1A02-48EF-8B78-8AB8BFA3FE31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{DD303BB2-1447-481E-A173-CD5ED225B7C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD303BB2-1447-481E-A173-CD5ED225B7C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD303BB2-1447-481E-A173-CD5ED225B7C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6A4A964-1A02-48EF-8B78-8AB8BFA3FE31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6A4A964-1A02-48EF-8B78-8AB8BFA3FE31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6A4A964-1A02-48EF-8B78-8AB8BFA3FE31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6A4A964-1A02-48EF-8B78-8AB8BFA3FE31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
