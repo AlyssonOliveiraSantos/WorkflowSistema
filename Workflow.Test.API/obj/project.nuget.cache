@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "s+P7s5/UnyY=",
+  "dgSpecHash": "c5+xH+uOrSM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Test.API\\Workflow.Test.API.csproj",
+  "projectFilePath": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Test.API\\Workflow.Test.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alyss\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\alyss\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

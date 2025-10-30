@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1lR1forw3Ys=",
+  "dgSpecHash": "lnNNhqlZCM0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj",
+  "projectFilePath": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alyss\\.nuget\\packages\\servicestack.interfaces\\8.8.0\\servicestack.interfaces.8.8.0.nupkg.sha512"
   ],

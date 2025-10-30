@@ -5707,9 +5707,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj",
+      "projectUniqueName": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj",
       "projectName": "Workflow.Shared.Data",
-      "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj",
+      "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj",
       "packagesPath": "C:\\Users\\alyss\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Data\\obj\\",
       "projectStyle": "PackageReference",
@@ -5732,8 +5732,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj": {
-              "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj"
+            "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj": {
+              "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj"
             }
           }
         }

@@ -10109,9 +10109,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Test.API\\Workflow.Test.API.csproj",
+      "projectUniqueName": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Test.API\\Workflow.Test.API.csproj",
       "projectName": "Workflow.Test.API",
-      "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Test.API\\Workflow.Test.API.csproj",
+      "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Test.API\\Workflow.Test.API.csproj",
       "packagesPath": "C:\\Users\\alyss\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Test.API\\obj\\",
       "projectStyle": "PackageReference",
@@ -10134,11 +10134,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj": {
-              "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj"
+            "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj": {
+              "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj"
             },
-            "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\WorkflowAPI\\WorkflowAPI.csproj": {
-              "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\WorkflowAPI\\WorkflowAPI.csproj"
+            "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\WorkflowAPI.csproj": {
+              "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\WorkflowAPI\\WorkflowAPI.csproj"
             }
           }
         }

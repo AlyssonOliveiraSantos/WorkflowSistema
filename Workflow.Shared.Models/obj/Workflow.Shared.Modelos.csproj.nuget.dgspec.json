@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj": {}
+    "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj": {
+    "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj",
+        "projectUniqueName": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj",
         "projectName": "Workflow.Shared.Modelos",
-        "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj",
+        "projectPath": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Models\\Workflow.Shared.Modelos.csproj",
         "packagesPath": "C:\\Users\\alyss\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Models\\obj\\",
         "projectStyle": "PackageReference",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Vfz8Q35dcRU=",
+  "dgSpecHash": "1YnZIB3l4Bc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\alyss\\source\\repos\\WorkflowApi\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj",
+  "projectFilePath": "C:\\Users\\alyss\\source\\repos\\WorkflowAPI\\Workflow.Shared.Data\\Workflow.Shared.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alyss\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\alyss\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

@@ -62,6 +62,40 @@ namespace WorkflowAPI.Services
 
         }
 
+        public async Task CadastraUsuarioInicial(CadastraUsuarioRequest cadastraUsuarioRequest)
+        {
+            if (cadastraUsuarioRequest.password != cadastraUsuarioRequest.confirmpassword)
+            {
+                throw new ApplicationException("As senhas não coincidem.");
+            }
+            if (cadastraUsuarioRequest.usuarioWorkflowId <= 0)
+            {
+                throw new ApplicationException("Usuário Workflow inválido.");
+            }
+            var usuario = new PessoaComAcesso
+            {
+                UserName = cadastraUsuarioRequest.username,
+                NormalizedUserName = cadastraUsuarioRequest.username.ToUpper(),
+                Email = cadastraUsuarioRequest.email,
+                NormalizedEmail = cadastraUsuarioRequest.email.ToUpper(),
+                UsuarioWorkflowId = cadastraUsuarioRequest.usuarioWorkflowId
+            };
+            if (!usuario.UsuarioWorkflowId.HasValue)
+            {
+                usuario.UsuarioWorkflowId = null;
+            }
+
+            IdentityResult resultado = await _userManager.CreateAsync(usuario, cadastraUsuarioRequest.password);
+            await _userManager.AddToRoleAsync(usuario, PerfilEnum.Admin.ToString());
+
+            if (!resultado.Succeeded)
+            {
+                var erros = string.Join("; ", resultado.Errors.Select(e => e.Description));
+                throw new ApplicationException($"Falha ao cadastrar o usuário: {erros}");
+            }
+
+        }
+
         public async Task CriaUsuarioInicial(string username, string email, string senha)
         {
             var usuarioExistente = await _userManager.FindByNameAsync(username);
@@ -76,7 +110,10 @@ namespace WorkflowAPI.Services
                 usuarioWorkflowId: null
             );
 
-            await CadastraUsuario(request);
+            await CadastraUsuarioInicial(request);
+
+
+
         }
 
         public async Task atualizaSenhaUsuario(ClaimsPrincipal user, SenhaUpdateRequest request)
