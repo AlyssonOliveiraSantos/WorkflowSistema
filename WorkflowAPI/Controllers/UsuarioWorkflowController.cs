@@ -27,7 +27,7 @@ public class UsuarioWorkflowController : ControllerBase
         return Ok(response);
     }
 
-    [HttpGet("id")]
+    [HttpGet("{id}")]
     public async Task<IActionResult> ObterPorId(int id)
     {
         var usuario = await _dal.ListarPor(u => u.Id == id);
